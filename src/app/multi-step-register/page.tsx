@@ -1,5 +1,5 @@
-import { FirstStep } from "./(components)";
+import { SecondStep } from "./(components)";
 
 export default function MultiStepRegister() {
-  return <FirstStep />;
+  return <SecondStep />;
 }
