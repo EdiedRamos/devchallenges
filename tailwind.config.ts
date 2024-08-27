@@ -24,6 +24,12 @@ const config: Config = {
         "msr-gray-100": "#A1A1A9",
         "msr-white": "#E5E7EB",
       },
+      fontSize: {
+        "cs-12": "12px",
+        "cs-14": "14px",
+        "cs-16": "16px",
+        "cs-20": "20px",
+      },
     },
   },
   plugins: [],
