@@ -1,26 +1,6 @@
-import React from "react";
-
-function Label({ children }: { children: React.ReactNode }) {
-  return <label className="flex flex-col">{children}</label>;
-}
-
-function Input({ type, placeholder }: { type: string; placeholder: string }) {
-  return (
-    <input
-      className="bg-inherit border-2 border-msr-gray-300 p-4 rounded-xl outline-none focus:border-msr-gray-200"
-      type={type}
-      placeholder={placeholder}
-    />
-  );
-}
-
-function Button({ children }: { children: React.ReactNode }) {
-  return (
-    <button className="bg-msr-purple-200 px-8 py-3 rounded-3xl">
-      {children}
-    </button>
-  );
-}
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { Label } from "./ui/label";
 
 export function FirstStep() {
   return (
