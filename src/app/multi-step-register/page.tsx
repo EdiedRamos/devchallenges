@@ -1,3 +1,5 @@
+import { FirstStep } from "./(components)";
+
 export default function MultiStepRegister() {
-  return <div>register</div>;
+  return <FirstStep />;
 }
