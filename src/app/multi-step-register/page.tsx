@@ -7,6 +7,7 @@ import {
   Success,
   ThirdStep,
 } from "./(components)";
+import { RegisterProvider } from "./(components)/context/register.provider";
 
 export default function MultiStepRegister() {
   const [currentStep, setCurrentStep] = useState<number>(1);
@@ -17,11 +18,13 @@ export default function MultiStepRegister() {
 
   return (
     <div className="min-h-screen flex flex-col gap-4 justify-center items-center bg-msr-black">
-      <FirstStep step={currentStep} handleContinue={handleCurrentStep} />
-      <SecondStep step={currentStep} handleContinue={handleCurrentStep} />
-      <ThirdStep step={currentStep} handleContinue={handleCurrentStep} />
-      <Success step={currentStep} />
-      <Steps step={currentStep} handleJump={handleCurrentStepJump} />
+      <RegisterProvider>
+        <FirstStep step={currentStep} handleContinue={handleCurrentStep} />
+        <SecondStep step={currentStep} handleContinue={handleCurrentStep} />
+        <ThirdStep step={currentStep} handleContinue={handleCurrentStep} />
+        <Success step={currentStep} />
+        <Steps step={currentStep} handleJump={handleCurrentStepJump} />
+      </RegisterProvider>
     </div>
   );
 }
