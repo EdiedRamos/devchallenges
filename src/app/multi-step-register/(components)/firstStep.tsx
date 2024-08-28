@@ -24,7 +24,7 @@ export function FirstStep({ step, handleContinue }: Props) {
 
   return (
     <div className="bg-msr-dark p-10 w-full max-w-[440px] rounded-2xl">
-      <h2>Register</h2>
+      <h2 className="text-white">Register</h2>
       <form className="mt-10 flex flex-col gap-6" onSubmit={onSubmit}>
         <Label>
           <span className="mb-2">Name</span>

@@ -6,7 +6,7 @@ export function Steps({ step }: Props) {
   if (step > 3) return null;
   return (
     <div className="flex gap-6 items-center">
-      <p>Step {step} of 3</p>
+      <p className="text-white">Step {step} of 3</p>
       <div className="flex gap-2">
         {Array.from({ length: 3 }, (_, i) => i + 1).map((info) => (
           <div
