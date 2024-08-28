@@ -2,7 +2,14 @@ import { Button } from "./ui/button";
 
 const TOPICS = ["User Experience", "Graphic Design"];
 
-export function ThirdStep() {
+interface Props {
+  step: number;
+  handleContinue: () => void;
+}
+
+export function ThirdStep({ step, handleContinue }: Props) {
+  if (step !== 3) return null;
+
   return (
     <div className="bg-msr-dark p-10 max-w-[440px] rounded-2xl">
       <h2>Summary</h2>
@@ -23,7 +30,7 @@ export function ThirdStep() {
         </ul>
       </div>
       <div className="flex justify-center mt-9">
-        <Button>Confirm</Button>
+        <Button onClick={handleContinue}>Confirm</Button>
       </div>
     </div>
   );

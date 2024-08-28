@@ -1,5 +1,4 @@
 "use client";
-
 import { Button } from "./ui/button";
 
 const TOPICS = [
@@ -20,7 +19,14 @@ const TOPICS = [
 // TODO: This mock is temporal
 const SELECTED = ["aafb708b-c3e7-40b5-bd3f-7e697f92e233"];
 
-export function SecondStep() {
+interface Props {
+  step: number;
+  handleContinue: () => void;
+}
+
+export function SecondStep({ step, handleContinue }: Props) {
+  if (step !== 2) return null;
+
   return (
     <div className="bg-msr-dark p-10 max-w-[440px] rounded-2xl">
       <h2>Which topics you are interested in?</h2>
@@ -39,7 +45,7 @@ export function SecondStep() {
         ))}
       </div>
       <div className="flex justify-center mt-9">
-        <Button>Continue</Button>
+        <Button onClick={handleContinue}>Continue</Button>
       </div>
     </div>
   );

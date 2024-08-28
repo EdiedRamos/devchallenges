@@ -2,7 +2,14 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 
-export function FirstStep() {
+interface Props {
+  step: number;
+  handleContinue: () => void;
+}
+
+export function FirstStep({ step, handleContinue }: Props) {
+  if (step !== 1) return null;
+
   return (
     <div className="bg-msr-dark p-10 max-w-[440px] rounded-2xl">
       <h2>Register</h2>
@@ -17,7 +24,7 @@ export function FirstStep() {
         </Label>
       </form>
       <div className="flex justify-center mt-9">
-        <Button>Continue</Button>
+        <Button onClick={handleContinue}>Continue</Button>
       </div>
     </div>
   );
