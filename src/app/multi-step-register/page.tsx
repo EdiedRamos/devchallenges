@@ -13,8 +13,6 @@ export default function MultiStepRegister() {
   const [currentStep, setCurrentStep] = useState<number>(1);
 
   const handleCurrentStep = () => setCurrentStep((prev) => prev + 1);
-  const handleCurrentStepJump = (step: number) =>
-    setCurrentStep((prev) => (step < 1 || step > 3 ? prev : step));
 
   return (
     <div className="min-h-screen flex flex-col gap-4 justify-center items-center bg-msr-black">
@@ -23,7 +21,7 @@ export default function MultiStepRegister() {
         <SecondStep step={currentStep} handleContinue={handleCurrentStep} />
         <ThirdStep step={currentStep} handleContinue={handleCurrentStep} />
         <Success step={currentStep} />
-        <Steps step={currentStep} handleJump={handleCurrentStepJump} />
+        <Steps step={currentStep} />
       </RegisterProvider>
     </div>
   );

@@ -5,9 +5,17 @@ export interface FormState {
   email: string;
 }
 
+export type Interest = {
+  id: string;
+  title: string;
+  selected: boolean;
+};
+
 interface RegisterContext {
   formState: FormState;
+  interestState: Interest[];
   handleFormState: (event: ChangeEvent<HTMLInputElement>) => void;
+  handleInterest: (topidId: string) => void;
 }
 
 export const RegisterContext = createContext<RegisterContext | undefined>(
