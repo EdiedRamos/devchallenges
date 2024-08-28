@@ -11,7 +11,7 @@ export function ThirdStep({ step, handleContinue }: Props) {
   if (step !== 3) return null;
 
   return (
-    <div className="bg-msr-dark p-10 max-w-[440px] rounded-2xl">
+    <div className="w-full bg-msr-dark p-10 max-w-[440px] rounded-2xl">
       <h2>Summary</h2>
       <div>
         <p>

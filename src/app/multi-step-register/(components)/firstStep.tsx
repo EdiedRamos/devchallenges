@@ -11,7 +11,7 @@ export function FirstStep({ step, handleContinue }: Props) {
   if (step !== 1) return null;
 
   return (
-    <div className="bg-msr-dark p-10 max-w-[440px] rounded-2xl">
+    <div className="bg-msr-dark p-10 w-full max-w-[440px] rounded-2xl">
       <h2>Register</h2>
       <form className="mt-10 flex flex-col gap-6">
         <Label>

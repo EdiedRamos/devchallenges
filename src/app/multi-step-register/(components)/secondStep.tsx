@@ -28,7 +28,7 @@ export function SecondStep({ step, handleContinue }: Props) {
   if (step !== 2) return null;
 
   return (
-    <div className="bg-msr-dark p-10 max-w-[440px] rounded-2xl">
+    <div className="w-full bg-msr-dark p-10 max-w-[440px] rounded-2xl">
       <h2>Which topics you are interested in?</h2>
       <div className="flex flex-col items-start mt-6 gap-4">
         {TOPICS.map((topic) => (
