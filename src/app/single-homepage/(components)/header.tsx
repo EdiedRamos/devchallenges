@@ -36,7 +36,9 @@ export function Header() {
       </div>
       <nav className="hidden md:flex">
         <ul className="flex gap-10 text-sh-gray font-medium">
-          <li className="text-sh-black dark:text-sh-white">About us</li>
+          <li className="text-sh-black dark:text-sh-white font-bold">
+            About us
+          </li>
           <li>Product</li>
           <li>Resource</li>
           <li>Contact</li>
