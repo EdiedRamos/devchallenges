@@ -1,6 +1,6 @@
 export function Content() {
   return (
-    <main className="flex flex-wrap px-10 mx-auto mt-20 font-medium">
+    <main className="flex flex-wrap px-10 mx-auto mt-16 font-medium">
       <div className="w-full lg:w-[50%] order-2 lg:order-1">
         <p className="uppercase text-sh-black dark:text-sh-white font-bold text-cs-16">
           😎 Simple way to communicate

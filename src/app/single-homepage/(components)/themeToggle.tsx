@@ -14,24 +14,24 @@ export function ThemeToggle() {
         <img
           src="/single-homepage/Moon_fill_light.svg"
           alt=""
-          className="block dark:hidden w-5"
+          className="block dark:hidden w-4"
         />
         <img
           src="/single-homepage/Moon_fill.svg"
           alt=""
-          className="hidden dark:block w-5"
+          className="hidden dark:block w-4"
         />
       </div>
       <div className="bg-white dark:bg-inherit rounded-full">
         <img
           src="/single-homepage/Sun_fill_light.svg"
           alt=""
-          className="hidden dark:block w-5"
+          className="hidden dark:block w-4"
         />
         <img
           src="/single-homepage/Sun_fill.svg"
           alt=""
-          className="block dark:hidden w-5"
+          className="block dark:hidden w-4"
         />
       </div>
     </div>
