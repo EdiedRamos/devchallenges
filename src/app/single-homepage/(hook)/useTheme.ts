@@ -27,7 +27,12 @@ export function useTheme() {
   }, []);
 
   const handleThemeToggle = () => {
-    const savedTheme = localStorage.getItem("theme") || "dark";
+    let savedTheme = localStorage.getItem("theme");
+    if (!savedTheme) {
+      savedTheme = document.documentElement.classList.contains("dark")
+        ? "dark"
+        : "light";
+    }
     if (savedTheme === "dark") {
       setToLightMode();
     } else {
