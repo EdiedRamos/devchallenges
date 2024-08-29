@@ -21,7 +21,7 @@ export function Header() {
   }, [showMobileMenu]);
 
   return (
-    <header className="flex flex-wrap justify-between items-center">
+    <header className="flex flex-wrap justify-between items-center text-cs-14">
       <div>
         <img
           src="/single-homepage/alarado-icon-homepage-dark.svg"
