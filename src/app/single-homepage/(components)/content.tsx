@@ -2,13 +2,13 @@ export function Content() {
   return (
     <main className="flex flex-wrap px-10 mx-auto mt-20 font-medium">
       <div className="w-full lg:w-[50%] order-2 lg:order-1">
-        <p className="uppercase text-sh-black dark:text-sh-white font-bold">
+        <p className="uppercase text-sh-black dark:text-sh-white font-bold text-cs-16">
           😎 Simple way to communicate
         </p>
         <h1 className="text-cs-60 font-bold max-w-96 mt-3 text-sh-black dark:text-sh-white">
           Actions for Accessibility in Design
         </h1>
-        <p className="mt-8 max-w-[500px]  text-cs-18 text-sh-gray">
+        <p className="mt-8 max-w-[500px]  text-cs-18 text-sh-dark">
           The fastest way to build and deploy websites with resusable
           components.
         </p>
@@ -22,7 +22,7 @@ export function Content() {
             </p>
           </button>
         </div>
-        <div className="flex gap-7 mt-10 text-cs-14 text-sh-gray">
+        <div className="flex gap-7 mt-10 text-cs-14 text-sh-dark">
           <div className="flex gap-2 items-center">
             <img
               src="/single-homepage/Done_ring_round_fill.svg"
@@ -43,7 +43,7 @@ export function Content() {
         <img
           src="/single-homepage/hero-image-simple-homepage.png"
           alt="Interesting image"
-          className="h-full"
+          className="h-full object-contain"
         />
       </div>
     </main>
