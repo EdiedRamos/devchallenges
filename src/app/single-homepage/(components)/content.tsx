@@ -5,7 +5,7 @@ export function Content() {
         <p className="uppercase text-sh-black dark:text-sh-white font-bold text-cs-14">
           😎 Simple way to communicate
         </p>
-        <h1 className="text-cs-60 font-bold max-w-96 mt-3 text-sh-black dark:text-sh-white leading-[90px]">
+        <h1 className="text-cs-60 font-bold max-w-96 mt-4 text-sh-black dark:text-sh-white leading-[90px]">
           Actions for Accessibility in Design
         </h1>
         <p className="mt-8 max-w-[500px]  text-cs-18 text-sh-gray">
