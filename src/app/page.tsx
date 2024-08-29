@@ -14,6 +14,11 @@ export default function Page() {
               Multi-step Register Form
             </Link>
           </li>
+          <li>
+            <Link href="single-homepage" className="underline ml-4">
+              Single Homepage
+            </Link>
+          </li>
         </ul>
       </section>
     </div>
