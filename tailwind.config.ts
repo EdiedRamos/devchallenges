@@ -36,6 +36,11 @@ const config: Config = {
         "pp-gray-100": "#DEDDEB",
         "pp-gray-200": "#6B7280",
         "pp-dark": "#374151",
+        // faq page
+        "fq-dark": "#12111F",
+        "fq-white": "#F2F5F9",
+        "fq-gray-100": "#CDD5E0",
+        "fq-gray-200": "#97A3B6",
       },
       fontSize: {
         "cs-12": "12px",

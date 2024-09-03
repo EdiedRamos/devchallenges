@@ -19,6 +19,11 @@ export default function Page() {
               Process Page
             </Link>
           </li>
+          <li>
+            <Link href="faq-page" className="underline ml-4">
+              FAQ Page
+            </Link>
+          </li>
         </ul>
       </section>
       <section className="mt-5">
