@@ -31,6 +31,11 @@ const config: Config = {
         "sh-gray": "#909193",
         "sh-light": "#F2F9FE",
         "sh-white": "#FFFFFF",
+        // process page
+        "pp-purple": "#6B59D0",
+        "pp-gray-100": "#DEDDEB",
+        "pp-gray-200": "#6B7280",
+        "pp-dark": "#374151",
       },
       fontSize: {
         "cs-12": "12px",
@@ -38,6 +43,8 @@ const config: Config = {
         "cs-16": "16px",
         "cs-18": "18px",
         "cs-20": "20px",
+        "cs-24": "24px",
+        "cs-48": "48px",
         "cs-60": "60px",
       },
     },
