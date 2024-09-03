@@ -31,7 +31,7 @@ export function Tabs() {
       {TABS.map((tab) => (
         <button
           onClick={() => setSelected(tab.id)}
-          className={`py-2 px-5 rounded-full text-cs-14 ${
+          className={`py-2 px-5 rounded-full text-cs-14 text-white ${
             tab.id === selected ? "bg-fq-gray-300" : ""
           }`}
           key={tab.id}

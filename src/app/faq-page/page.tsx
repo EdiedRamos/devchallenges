@@ -9,7 +9,7 @@ export default function FaqPage() {
             Frequently Asked Questions
           </h2>
         </div>
-        <p className="mt-[96px] text-cs-20">
+        <p className="mt-[96px] text-cs-20 text-white">
           Products, Website or Brand Design, we’ve got you covered!
         </p>
         <p className="mt-4 text-cs-14 text-fq-gray-100">

@@ -22,6 +22,7 @@ export function AccordionOpened({ title, description }: Props) {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
+        className="text-white"
       >
         <path d="m18 15-6-6-6 6" />
       </svg>
