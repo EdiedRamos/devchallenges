@@ -7,8 +7,8 @@ export default function ProcessPage() {
           alt="process page background"
         />
       </div>
-      <div className="max-w-[1200px] mt-10 mx-auto px-5 md:px-10">
-        <h3 className="text-pp-purple text-cs-24">Our Process</h3>
+      <div className="max-w-[1200px] mt-7 mx-auto px-5 md:px-10">
+        <h3 className="text-pp-purple text-cs-24 font-bold">Our Process</h3>
         <h2 className="text-pp-dark text-cs-48 w-full max-w-[700px] font-bold">
           Easy And Perfect Solution For Your Business App
         </h2>
