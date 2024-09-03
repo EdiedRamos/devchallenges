@@ -12,6 +12,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "fq-background": "url('/faq-page/faq-title-bg.png')",
       },
       colors: {
         // multi-step register
@@ -41,6 +42,7 @@ const config: Config = {
         "fq-white": "#F2F5F9",
         "fq-gray-100": "#CDD5E0",
         "fq-gray-200": "#97A3B6",
+        "fq-gray-300": "#2B2936",
       },
       fontSize: {
         "cs-12": "12px",
