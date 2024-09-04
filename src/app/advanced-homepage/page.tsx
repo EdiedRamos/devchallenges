@@ -1,4 +1,12 @@
-import { Container, Header, ProcessGrid, Version } from "./(components)";
+import {
+  BuildSection,
+  ClonabledSection,
+  Container,
+  Header,
+  ProcessGrid,
+  StyleSection,
+  Version,
+} from "./(components)";
 
 export default function AdvancedHomepage() {
   return (
@@ -24,7 +32,7 @@ export default function AdvancedHomepage() {
           </div>
         </Container>
       </div>
-      <div className="bg-ah-dark bg-ah-bg-circles bg-no-repeat bg-top">
+      <div className="bg-ah-dark bg-ah-bg-circles bg-no-repeat bg-top pb-24">
         <Container className="pt-24">
           <h3 className="text-cs-36 max-w-[400px] text-center mx-auto">
             This is a new creative process
@@ -34,6 +42,15 @@ export default function AdvancedHomepage() {
           </p>
         </Container>
         <ProcessGrid />
+      </div>
+      <div className="bg-ah-white pt-24">
+        <ClonabledSection />
+      </div>
+      <div className="bg-ah-white pt-[72px]">
+        <StyleSection />
+      </div>
+      <div className="bg-ah-white pt-[72px] pb-24">
+        <BuildSection />
       </div>
     </div>
   );
