@@ -5,7 +5,7 @@ export function Header() {
         <img src="/advanced-homepage/hufie-logo.svg" alt="logo" />
         <div className="flex gap-7 text-cs-16">
           <button className="text-ah-gray">Log in</button>
-          <button className="bg-ah-green px-6 py-3 rounded-full text-ah-white">
+          <button className="bg-ah-green px-6 py-2 rounded-full text-ah-white">
             Sign Up
           </button>
         </div>

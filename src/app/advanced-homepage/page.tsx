@@ -15,13 +15,13 @@ export default function AdvancedHomepage() {
       <Container>
         <Header />
       </Container>
-      <div className="bg-none lg:bg-ah-background xbg-contain bg-no-repeat bg-rightx mt-24 bg-[length:600px_auto] bg-[right_-6rem]">
+      <div className="bg-none lg:bg-ah-background bg-no-repeat bg-rightx mt-[94px] bg-[length:650px_auto] bg-[right_-6rem]">
         <Container>
           <Version />
-          <h2 className="text-cs-64 text-sh-black max-w-[500px] mt-8 leading-[70px] font-medium">
+          <h2 className="text-cs-64 text-sh-black max-w-[500px] mt-8 leading-[75px] font-medium">
             Where data and creativity come together.
           </h2>
-          <p className="mt-8 text-ah-gray max-w-[450px] text-cs-18">
+          <p className="mt-8 text-ah-gray max-w-[550px] text-cs-20">
             The fastest way to build and deploy websites with reusable
             components.
           </p>
