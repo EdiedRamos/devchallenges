@@ -18,7 +18,7 @@ export default function AdvancedHomepage() {
       <div className="bg-none lg:bg-ah-background bg-no-repeat bg-rightx mt-[96px] bg-[length:auto_1050px] bg-[right_-100px]">
         <Container>
           <Version />
-          <h2 className="text-cs-64 text-sh-black max-w-[510px] mt-8 leading-[80px] font-bold">
+          <h2 className="text-cs-64 text-sh-black max-w-[510px] mt-9 leading-[80px] font-bold">
             Where data and creativity come together.
           </h2>
           <p className="mt-8 text-ah-gray max-w-[550px] text-cs-20">
