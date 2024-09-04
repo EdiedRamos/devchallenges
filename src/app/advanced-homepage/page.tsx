@@ -2,6 +2,7 @@ import {
   BuildSection,
   ClonabledSection,
   Container,
+  Footer,
   Header,
   ProcessGrid,
   StyleSection,
@@ -52,6 +53,7 @@ export default function AdvancedHomepage() {
       <div className="bg-ah-white pt-[72px] pb-24">
         <BuildSection />
       </div>
+      <Footer />
     </div>
   );
 }

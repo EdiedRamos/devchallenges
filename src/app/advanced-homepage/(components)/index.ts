@@ -6,3 +6,4 @@ export * from "./clonableSection";
 export * from "./styleSection";
 export * from "./checkItem";
 export * from "./buildSection";
+export * from "./footer";
