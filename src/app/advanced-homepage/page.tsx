@@ -1,4 +1,4 @@
-import { Container, Header, Version } from "./(components)";
+import { Container, Header, ProcessGrid, Version } from "./(components)";
 
 export default function AdvancedHomepage() {
   return (
@@ -23,6 +23,17 @@ export default function AdvancedHomepage() {
             <button className="text-ah-gray">VIEW DEMO</button>
           </div>
         </Container>
+      </div>
+      <div className="bg-ah-dark bg-ah-bg-circles bg-no-repeat bg-top">
+        <Container className="pt-24">
+          <h3 className="text-cs-36 max-w-[400px] text-center mx-auto">
+            This is a new creative process
+          </h3>
+          <p className="text-ah-gray text-center mt-4">
+            Quisque eleifend velit vel erat fringilla interdum
+          </p>
+        </Container>
+        <ProcessGrid />
       </div>
     </div>
   );

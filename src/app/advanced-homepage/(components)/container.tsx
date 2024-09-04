@@ -1,5 +1,16 @@
 import type { PropsWithChildren } from "react";
 
-export function Container({ children }: PropsWithChildren) {
-  return <div className="w-full max-w-[1200px] mx-auto">{children}</div>;
+interface Props {
+  className?: string;
+}
+
+export function Container({
+  children,
+  className = "",
+}: PropsWithChildren<Props>) {
+  return (
+    <div className={`w-full max-w-[1200px] mx-auto ${className}`}>
+      {children}
+    </div>
+  );
 }
