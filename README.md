@@ -6,4 +6,4 @@
 2. Responsive Web Design
 3. Frontend Libraries (Less interesting)
 
-The fullstack solutions will have their own repository 😊
+The good frontend and fullstack projects will have their own repository 😊
