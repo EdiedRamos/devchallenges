@@ -56,6 +56,15 @@ const config: Config = {
         "ah-black": "#333333",
         "ah-gray": "#737F8B",
         "ah-dark": "#161739",
+        // basic text to speech
+        "ts-purple": "#6326A2",
+        "ts-blue-100": "#263FA9",
+        "ts-blue-200": "#2E5B84",
+        "ts-blue-300": "#1E2A52",
+        "ts-blue-400": "#1C1B43",
+        "ts-white": "#E3E8EF",
+        "ts-gray": "#677489",
+        "ts-gray-dark": "#364153",
       },
       fontSize: {
         "cs-12": "12px",

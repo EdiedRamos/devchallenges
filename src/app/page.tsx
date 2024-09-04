@@ -39,6 +39,11 @@ export default function Page() {
               Multi-step Register Form
             </Link>
           </li>
+          <li>
+            <Link href="basic-text-to-speech" className="underline ml-4">
+              Basic Text To Speech
+            </Link>
+          </li>
         </ul>
       </section>
     </div>
