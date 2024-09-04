@@ -1,3 +1,29 @@
+import { Container, Header, Version } from "./(components)";
+
 export default function AdvancedHomepage() {
-  return <div>advanced homepage</div>;
+  return (
+    <div className="bg-ah-white">
+      <Container>
+        <Header />
+      </Container>
+      <div className="bg-none md:bg-ah-background bg-contain bg-no-repeat bg-right mt-24">
+        <Container>
+          <Version />
+          <h2 className="text-cs-64 text-sh-black max-w-[500px] mt-8">
+            Where data and creativity come together.
+          </h2>
+          <p className="mt-8 text-ah-gray max-w-[400px]">
+            The fastest way to build and deploy websites with reusable
+            components.
+          </p>
+          <div className="flex flex-wrap gap-9 pt-[82px] pb-[124px]">
+            <button className="bg-ah-green px-6 py-3 rounded-full text-ah-white">
+              GET STARTED
+            </button>
+            <button className="text-ah-gray">VIEW DEMO</button>
+          </div>
+        </Container>
+      </div>
+    </div>
+  );
 }

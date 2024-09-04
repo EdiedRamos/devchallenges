@@ -24,6 +24,11 @@ export default function Page() {
               FAQ Page
             </Link>
           </li>
+          <li>
+            <Link href="advanced-homepage" className="underline ml-4">
+              Advanced Homepage - Hufie
+            </Link>
+          </li>
         </ul>
       </section>
       <section className="mt-5">

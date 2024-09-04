@@ -13,6 +13,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "fq-background": "url('/faq-page/faq-title-bg.png')",
+        "ah-background": "url('/advanced-homepage/hero-image-huffie.png')",
       },
       colors: {
         // multi-step register
