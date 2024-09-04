@@ -3,7 +3,7 @@ import { Container } from "./container";
 export function ProcessGrid() {
   return (
     <div className="relative mt-[72px]">
-      <Container className="relative flex flex-wrap justify-evenly">
+      <Container className="relative flex flex-wrap justify-evenly gap-5 md:gap-0">
         <div className="w-full max-w-[200px]">
           <div className="bg-ah-blue w-20 h-20 rounded-lg flex justify-center items-center mx-auto">
             <svg
