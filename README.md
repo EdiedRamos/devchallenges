@@ -4,6 +4,6 @@
 
 1. Javascript
 2. Responsive Web Design
-3. Frontend Libraries
+3. Frontend Libraries (Less interesting)
 
 The fullstack solutions will have their own repository 😊
