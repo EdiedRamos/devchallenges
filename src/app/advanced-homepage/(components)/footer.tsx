@@ -2,7 +2,7 @@ import { Container } from "./container";
 
 export function Footer() {
   return (
-    <footer className="py-24 bg-ah-dark">
+    <footer className="py-24 bg-ah-dark text-ah-white">
       <Container>
         <div className="flex flex-wrap justify-between">
           <h4 className="text-ah-white text-cs-36 w-full max-w-[500px]">

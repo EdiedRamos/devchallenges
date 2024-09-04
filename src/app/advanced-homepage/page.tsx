@@ -35,7 +35,7 @@ export default function AdvancedHomepage() {
       </div>
       <div className="bg-ah-dark bg-ah-bg-circles bg-no-repeat bg-top pb-24">
         <Container className="pt-24">
-          <h3 className="text-cs-36 max-w-[400px] text-center mx-auto">
+          <h3 className="text-cs-36 max-w-[400px] text-center mx-auto text-ah-white">
             This is a new creative process
           </h3>
           <p className="text-ah-gray text-center mt-4">
