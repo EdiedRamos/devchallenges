@@ -11,7 +11,7 @@ export function VoiceControl() {
     useSpeech();
 
   return (
-    <div className="flex flex-wrap gap-2 py-2 rounded-lg items-center bg-ts-blue-300 max-w-96 text-ts-white mt-2">
+    <div className="flex flex-wrap gap-2 py-2 rounded-lg items-center bg-ts-blue-300 max-w-96 text-ts-white mt-2 text-cs-14">
       <p className="text-ts-gray px-5">Voice</p>
       {voices ? (
         <select

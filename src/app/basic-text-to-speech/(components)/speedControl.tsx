@@ -7,7 +7,7 @@ export function SpeedControl() {
   const { speed, handleSpeed } = useSpeech();
 
   return (
-    <div className="flex flex-wrap gap-2 bg-ts-blue-300 py-2 rounded-lg items-center mt-[18px] max-w-[350px] text-ts-white">
+    <div className="flex flex-wrap gap-2 bg-ts-blue-300 py-2 rounded-lg items-center mt-[18px] max-w-[350px] text-ts-white text-cs-14">
       <p className="text-ts-gray px-5">Speed</p>
       {SPEED.map((data) => (
         <button
