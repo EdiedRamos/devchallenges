@@ -20,7 +20,7 @@ export default function BasicTextToSpeech() {
           <section className="px-8 py-5 flex flex-col">
             <Header />
             <TextControl />
-            <p className="text-ts-gray-dark text-cs-12 mt-2">
+            <p className="text-ts-gray-dark text-cs-12 mt-2 max-w-[500px]">
               Enter your text above and hit &quot;play.&quot; You can choose a
               different voice by selecting an option from the dropdown menu.
             </p>
