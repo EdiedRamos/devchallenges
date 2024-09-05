@@ -10,6 +10,7 @@ export interface SpeechContext {
   handleText: (text: string) => void;
   speed: Speed;
   handleSpeed: (speed: Speed) => void;
+  startSpeech: () => void;
 }
 
 export const speechContext = createContext<SpeechContext | undefined>(
