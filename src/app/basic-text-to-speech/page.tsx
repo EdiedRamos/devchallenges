@@ -10,11 +10,11 @@ import { SpeechProvider } from "./(context)/SpeechProvider";
 export default function BasicTextToSpeech() {
   return (
     <div className="bg-ts-blue-400 min-h-screen">
-      <div className="lg:columns-2 bg-ts-blue-400 max-w-[1250px] mx-auto">
+      <div className="lg:columns-2 bg-ts-blue-400 max-w-[1280px] mx-auto">
         <img
           src="/basic-text-to-speech/hero-image-text-to-speech.png"
           alt="robot image"
-          className="hidden lg:inline-block"
+          className="hidden lg:inline-block w-[95%]"
         />
         <SpeechProvider>
           <section className="px-7 py-4 flex flex-col">
