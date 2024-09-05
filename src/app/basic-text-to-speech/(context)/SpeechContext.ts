@@ -7,6 +7,7 @@ export type Speed = {
 
 export interface SpeechContext {
   text: string;
+  handleText: (text: string) => void;
   speed: Speed;
   handleSpeed: (speed: Speed) => void;
 }
