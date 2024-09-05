@@ -14,7 +14,7 @@ export default function BasicTextToSpeech() {
         <img
           src="/basic-text-to-speech/hero-image-text-to-speech.png"
           alt="robot image"
-          className="hidden lg:inline-block w-[95%]"
+          className="hidden lg:inline-block w-[98%]"
         />
         <SpeechProvider>
           <section className="px-7 py-4 flex flex-col">
