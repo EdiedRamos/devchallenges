@@ -11,8 +11,8 @@ export function VoiceControl() {
     useSpeech();
 
   return (
-    <div className="flex flex-wrap gap-2 py-2 rounded-lg items-center bg-ts-blue-300 max-w-96 text-ts-white mt-2 text-[13px]">
-      <p className="text-ts-gray px-5 font-medium">Voice</p>
+    <div className="flex flex-wrap gap-2 py-2 rounded-lg items-center bg-ts-blue-300 max-w-[360px] text-ts-white mt-2 text-[13px] font-medium">
+      <p className="text-ts-gray px-5">Voice</p>
       {voices ? (
         <select
           className="bg-inherit p-2 focus:bg-ts-blue-400 rounded-lg outline-none"
