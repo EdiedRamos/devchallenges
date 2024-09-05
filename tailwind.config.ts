@@ -16,6 +16,7 @@ const config: Config = {
         "ah-background": "url('/advanced-homepage/hero-image-huffie.png')",
         "ah-bg-circles": "url('/advanced-homepage/bg-1.svg')",
         "ah-bg-lines": "url('/advanced-homepage/bg-2.svg')",
+        "ms-bg": "url('/movie-search-app/hero-image-movie-search.png')",
       },
       colors: {
         // multi-step register
