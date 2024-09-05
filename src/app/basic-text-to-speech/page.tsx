@@ -10,7 +10,7 @@ import { SpeechProvider } from "./(context)/SpeechProvider";
 export default function BasicTextToSpeech() {
   return (
     <div className="bg-ts-blue-400 min-h-screen">
-      <div className="lg:columns-2 bg-ts-blue-400 max-w-[1300px] mx-auto">
+      <div className="lg:columns-2 bg-ts-blue-400 max-w-[1200px] mx-auto">
         <img
           src="/basic-text-to-speech/hero-image-text-to-speech.png"
           alt="robot image"
