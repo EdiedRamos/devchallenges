@@ -1,4 +1,10 @@
-import { Logo, SpeedControl, VoiceControl } from "./(components)";
+import {
+  Header,
+  SpeechControl,
+  SpeedControl,
+  TextControl,
+  VoiceControl,
+} from "./(components)";
 import { SpeechProvider } from "./(context)/SpeechProvider";
 
 export default function BasicTextToSpeech() {
@@ -12,14 +18,8 @@ export default function BasicTextToSpeech() {
         />
         <SpeechProvider>
           <section className="p-8 flex flex-col">
-            <div className="flex justify-between items-center">
-              <p className="text-ts-white text-cs-20 ">Speechbot</p>
-              <Logo className="text-ts-white w-16" />
-            </div>
-            <textarea
-              placeholder="Enter your text"
-              className="h-52 bg-ts-blue-300 p-5 resize-none rounded-lg text-ts-white placeholder:text-ts-gray mt-10 outline-none focus:ring-2 focus:ring-ts-blue-200"
-            />
+            <Header />
+            <TextControl />
             <p className="text-ts-gray-dark text-cs-12 mt-2">
               Enter your text above and hit &quot;play.&quot; You can choose a
               different voice by selecting an option from the dropdown menu.
@@ -27,9 +27,7 @@ export default function BasicTextToSpeech() {
             <p className="text-ts-white text-cs-12 mt-8">Settings</p>
             <VoiceControl />
             <SpeedControl />
-            <button className="text-ts-white text-cs-16 bg-gradient-to-r from-ts-purple to-ts-blue-100 p-4 rounded-lg mt-[62px]">
-              Text to Speech
-            </button>
+            <SpeechControl />
           </section>
         </SpeechProvider>
       </div>
