@@ -24,7 +24,7 @@ export default function BasicTextToSpeech() {
               Enter your text above and hit &quot;play.&quot; You can choose a
               different voice by selecting an option from the dropdown menu.
             </p>
-            <p className="text-ts-white text-cs-12 mt-7">Settings</p>
+            <p className="text-ts-white text-cs-12 mt-6">Settings</p>
             <VoiceControl />
             <SpeedControl />
             <SpeechControl />
