@@ -11,7 +11,7 @@ export function VoiceControl() {
     useSpeech();
 
   return (
-    <div className="flex flex-wrap gap-2 py-2 rounded-lg items-center bg-ts-blue-300 max-w-96 text-ts-white mt-2 text-cs-14">
+    <div className="flex flex-wrap gap-2 py-2 rounded-lg items-center bg-ts-blue-300 max-w-96 text-ts-white mt-2 text-[13px]">
       <p className="text-ts-gray px-5">Voice</p>
       {voices ? (
         <select
@@ -23,11 +23,11 @@ export function VoiceControl() {
           ))}
         </select>
       ) : (
-        <p className="animate-pulse">Loading...</p>
+        <p className="animate-pulse text-ts-white">Loading...</p>
       )}
       {currentVoices ? (
         <select
-          className="bg-inherit p-2 focus:bg-ts-blue-400 rounded-lg outline-none max-w-32"
+          className="bg-inherit p-2 focus:bg-ts-blue-400 rounded-lg outline-none max-w-44"
           onChange={(event) => handleCurrentVoice(event.target.value)}
         >
           {currentVoices.map((voice) => (
@@ -35,7 +35,7 @@ export function VoiceControl() {
           ))}
         </select>
       ) : (
-        <p className="animate-pulse">Loading...</p>
+        <p className="animate-pulse text-ts-white">Loading...</p>
       )}
     </div>
   );

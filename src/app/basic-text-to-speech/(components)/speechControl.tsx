@@ -7,7 +7,7 @@ export function SpeechControl() {
   return (
     <button
       onClick={startSpeech}
-      className="text-ts-white text-cs-14 bg-gradient-to-r from-ts-purple to-ts-blue-100 py-4 rounded-lg mt-[62px]"
+      className="text-ts-white text-cs-14 bg-gradient-to-r from-ts-purple to-ts-blue-100 py-4 rounded-lg mt-[62px] font-medium"
     >
       Text to Speech
     </button>
