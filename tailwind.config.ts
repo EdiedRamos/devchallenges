@@ -65,6 +65,11 @@ const config: Config = {
         "ts-white": "#E3E8EF",
         "ts-gray": "#677489",
         "ts-gray-dark": "#364153",
+        // movie search app
+        "ms-blue": "#3662E3",
+        "ms-black": "#111729",
+        "ms-dark": "#20293A",
+        "ms-gray": "#97A3B6",
       },
       fontSize: {
         "cs-12": "12px",

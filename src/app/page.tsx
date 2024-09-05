@@ -44,6 +44,11 @@ export default function Page() {
               Basic Text To Speech
             </Link>
           </li>
+          <li>
+            <Link href="movie-search-app" className="underline ml-4">
+              Movie Search App
+            </Link>
+          </li>
         </ul>
       </section>
     </div>
