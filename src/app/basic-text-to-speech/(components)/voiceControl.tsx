@@ -15,7 +15,7 @@ export function VoiceControl() {
       <p className="text-ts-gray px-5">Voice</p>
       {voices ? (
         <select
-          className="bg-inherit p-3 focus:bg-ts-blue-400 rounded-lg outline-none"
+          className="bg-inherit p-2 focus:bg-ts-blue-400 rounded-lg outline-none"
           onChange={(event) => handleCurrentLang(event.target.value)}
         >
           {Object.keys(voices).map((voice) => (
@@ -27,7 +27,7 @@ export function VoiceControl() {
       )}
       {currentVoices ? (
         <select
-          className="bg-inherit p-3 focus:bg-ts-blue-400 rounded-lg outline-none max-w-32"
+          className="bg-inherit p-2 focus:bg-ts-blue-400 rounded-lg outline-none max-w-32"
           onChange={(event) => handleCurrentVoice(event.target.value)}
         >
           {currentVoices.map((voice) => (

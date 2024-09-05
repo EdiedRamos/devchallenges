@@ -12,7 +12,7 @@ export function SpeedControl() {
       {SPEED.map((data) => (
         <button
           onClick={() => handleSpeed(data)}
-          className={`p-3 rounded-lg ${
+          className={`p-2 rounded-lg ${
             data.id === speed.id ? "bg-ts-blue-400" : ""
           }`}
           key={data.id}
