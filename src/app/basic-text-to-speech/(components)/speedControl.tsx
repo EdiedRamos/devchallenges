@@ -8,7 +8,7 @@ export function SpeedControl() {
 
   return (
     <div className="flex flex-wrap gap-2 bg-ts-blue-300 py-2 rounded-lg items-center mt-[18px] max-w-[350px] text-ts-white text-[13px]">
-      <p className="text-ts-gray px-5">Speed</p>
+      <p className="text-ts-gray px-5 font-medium">Speed</p>
       {SPEED.map((data) => (
         <button
           onClick={() => handleSpeed(data)}
