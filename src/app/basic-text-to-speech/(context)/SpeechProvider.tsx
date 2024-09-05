@@ -16,7 +16,7 @@ import { SPEED } from "../(data)";
 
 export const SpeechProvider = ({ children }: PropsWithChildren) => {
   const [text, setText] = useState<string>("");
-  const [speed, setSpeed] = useState<Speed>(SPEED[2]);
+  const [speed, setSpeed] = useState<Speed>(SPEED[0]);
 
   const [voices, setVoices] = useState<Voices>();
   const [currentVoices, setCurrentVoices] = useState<SpeechSynthesisVoice[]>();

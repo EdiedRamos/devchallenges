@@ -23,7 +23,7 @@ export function VoiceControl() {
           ))}
         </select>
       ) : (
-        <p className="animate-pulse text-ts-white">en-US.</p>
+        <p className="animate-pulse text-ts-white p-2">en-US.</p>
       )}
       {currentVoices ? (
         <select
@@ -35,7 +35,7 @@ export function VoiceControl() {
           ))}
         </select>
       ) : (
-        <p className="animate-pulse text-ts-white">Albert</p>
+        <p className="animate-pulse text-ts-white p-2">Albert</p>
       )}
     </div>
   );
