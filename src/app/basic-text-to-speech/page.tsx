@@ -17,7 +17,7 @@ export default function BasicTextToSpeech() {
           className="hidden lg:inline-block"
         />
         <SpeechProvider>
-          <section className="px-8 py-5 flex flex-col">
+          <section className="px-8 py-4 flex flex-col">
             <Header />
             <TextControl />
             <p className="text-ts-gray-dark text-cs-12 mt-2 max-w-[500px]">
