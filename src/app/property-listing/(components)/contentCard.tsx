@@ -1,4 +1,4 @@
-import { Property } from "./content";
+import { Property } from "../(models)";
 
 export function ContentCard({ property }: { property: Property }) {
   return (

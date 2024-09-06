@@ -43,9 +43,9 @@ export function LocationFilter() {
       </button>
       {LOCATIONS.map((location) => (
         <button
-          onClick={() => handleLocation(location.id)}
+          onClick={() => handleLocation(location.name)}
           className={`${commonStyles} ${
-            currentLocation === location.id ? "bg-pl-gray-200" : ""
+            currentLocation === location.name ? "bg-pl-gray-200" : ""
           }`}
           key={location.id}
         >
