@@ -81,6 +81,12 @@ const config: Config = {
         "pl-yellow": "#F6C768",
         "pl-blue": "#4E80EE",
         "pl-white": "#F2F9FE",
+        // recipe page
+        "rp-yellow": "#FEBD2E",
+        "rp-blue": "#4E80EE",
+        "rp-light": "#E5E7EB",
+        "rp-dark": "#0E1325",
+        "rp-gray": "#394150",
       },
       fontSize: {
         "cs-10": "10px",
