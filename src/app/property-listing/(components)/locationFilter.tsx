@@ -1,3 +1,8 @@
+"use client";
+
+import { useFilter } from "../(context)";
+import { DEFAULT_LOCATION } from "../(utils)/constants";
+
 type Location = {
   id: string;
   name: string;
@@ -22,24 +27,25 @@ const LOCATIONS: Location[] = [
   },
 ];
 
-const currentLocationFilter: string = "ALL_STAYS";
-
 const commonStyles = "px-3 py-2 rounded-lg";
 
 export function LocationFilter() {
+  const { currentLocation, handleLocation } = useFilter();
   return (
     <div className="flex flex-wrap gap-3 text-pl-white">
       <button
+        onClick={() => handleLocation(DEFAULT_LOCATION)}
         className={`${commonStyles} ${
-          currentLocationFilter === "ALL_STAYS" ? "bg-pl-gray-200" : ""
+          currentLocation === DEFAULT_LOCATION ? "bg-pl-gray-200" : ""
         }`}
       >
         All Stays
       </button>
       {LOCATIONS.map((location) => (
         <button
+          onClick={() => handleLocation(location.id)}
           className={`${commonStyles} ${
-            currentLocationFilter === location.id ? "bg-pl-gray-200" : ""
+            currentLocation === location.id ? "bg-pl-gray-200" : ""
           }`}
           key={location.id}
         >

@@ -1,11 +1,17 @@
 "use client";
 
+import { useFilter } from "../(context)";
+
 export function TypeFilter() {
+  const { bySuperhost, handleSuperhost } = useFilter();
+
   return (
     <div className="flex flex-wrap gap-5 items-center">
       <div className="flex flex-wrap gap-2 items-center">
         <div className="relative inline-block w-12 select-none">
           <input
+            checked={bySuperhost}
+            onChange={handleSuperhost}
             type="checkbox"
             name="toggle"
             id="toggle"
