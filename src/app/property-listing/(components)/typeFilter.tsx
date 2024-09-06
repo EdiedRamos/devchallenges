@@ -18,7 +18,7 @@ export function TypeFilter() {
         </div>
         <p className="text-pl-white text-cs-12">Superhost</p>
       </div>
-      <select className="bg-transparent py-3 px-6 border-2 rounded-lg border-pl-gray-100 outline-none">
+      <select className="bg-transparent py-3 px-6 border-2 rounded-lg border-pl-gray-100 outline-none text-pl-white">
         <option className="bg-pl-dark-200">Property type</option>
         <option className="bg-pl-dark-200">1 debroom</option>
         <option className="bg-pl-dark-200">2 debroom</option>
