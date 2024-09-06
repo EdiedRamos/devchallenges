@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <header className="bg-pl-bg h-[620px] bg-no-repeat bg-cover bg-center lg:bg-[center_top_-4rem] text-pl-black">
+    <header className="bg-pl-bg h-[620px] bg-no-repeat bg-cover bg-center lg:bg-center text-pl-black">
       <div className="pt-[180px] pl-16 md:pl-28 lg:pl-[140px]">
         <h2 className="text-cs-64 font-bold max-w-[500px]">
           Peace, nature, dream
