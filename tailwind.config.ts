@@ -71,6 +71,15 @@ const config: Config = {
         "ms-black": "#111729",
         "ms-dark": "#20293A",
         "ms-gray": "#97A3B6",
+        // property listing
+        "pl-black": "#121826",
+        "pl-gray-100": "#97A3B6",
+        "pl-gray-200": "#4A5567",
+        "pl-dark-100": "#20293af2",
+        "pl-dark-200": "#20293A",
+        "pl-yellow": "#F6C768",
+        "pl-blue": "#4E80EE",
+        "pl-white": "#F2F9FE",
       },
       fontSize: {
         "cs-12": "12px",

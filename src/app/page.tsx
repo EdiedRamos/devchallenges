@@ -49,6 +49,11 @@ export default function Page() {
               Movie Search App
             </Link>
           </li>
+          <li>
+            <Link href="property-listing" className="underline ml-4">
+              Property Listing
+            </Link>
+          </li>
         </ul>
       </section>
     </div>
