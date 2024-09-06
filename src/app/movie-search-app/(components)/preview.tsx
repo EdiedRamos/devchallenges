@@ -11,7 +11,7 @@ export function Preview() {
   if (!movie) return <p className="text-white">Movie not found</p>;
 
   return (
-    <div className="flex flex-wrap border-2 border-ms-dark rounded-lg mt-5 p-6 gap-6 w-full max-w-[980px]">
+    <div className="flex flex-wrap border-2 border-ms-dark rounded-lg mt-5 p-6 gap-6 w-full max-w-[980px] justify-center lg:justify-normal">
       <div className="rounded-lg overflow-hidden w-full max-w-[240px]">
         <img
           src={movie.poster}
