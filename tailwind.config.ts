@@ -18,6 +18,7 @@ const config: Config = {
         "ah-bg-lines": "url('/advanced-homepage/bg-2.svg')",
         "ms-bg": "url('/movie-search-app/hero-image-movie-search.png')",
         "pl-bg": "url('/property-listing/hero-image.jpg')",
+        "rp-bg": "url('/recipe-page/hero-imagehc.jpg')",
       },
       colors: {
         // multi-step register
