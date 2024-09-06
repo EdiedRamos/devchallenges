@@ -3,7 +3,8 @@
 import { useFilter } from "../(context)";
 
 export function TypeFilter() {
-  const { bySuperhost, handleSuperhost } = useFilter();
+  const { bySuperhost, bedroomType, handleSuperhost, handleBedroomType } =
+    useFilter();
 
   return (
     <div className="flex flex-wrap gap-5 items-center">
@@ -24,10 +25,20 @@ export function TypeFilter() {
         </div>
         <p className="text-pl-white text-cs-12">Superhost</p>
       </div>
-      <select className="bg-transparent py-3 px-6 border-2 rounded-lg border-pl-gray-100 outline-none text-pl-white">
-        <option className="bg-pl-dark-200">Property type</option>
-        <option className="bg-pl-dark-200">1 bedroom</option>
-        <option className="bg-pl-dark-200">2 bedroom</option>
+      <select
+        value={bedroomType}
+        onChange={(event) => handleBedroomType(event.target.value)}
+        className="bg-transparent py-3 px-6 border-2 rounded-lg border-pl-gray-100 outline-none text-pl-white"
+      >
+        <option value="0" className="bg-pl-dark-200">
+          Property type
+        </option>
+        <option value="1" className="bg-pl-dark-200">
+          1 bedroom
+        </option>
+        <option value="2" className="bg-pl-dark-200">
+          2 bedroom
+        </option>
       </select>
     </div>
   );
