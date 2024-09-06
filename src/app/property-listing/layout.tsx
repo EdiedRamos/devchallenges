@@ -8,9 +8,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Text To Speech",
+  title: "Property Listing",
 };
 
-export default function TextSpeechLayout({ children }: PropsWithChildren) {
+export default function PropertyListingLayout({ children }: PropsWithChildren) {
   return <body className={outfit.className}>{children}</body>;
 }
