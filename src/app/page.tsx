@@ -49,9 +49,19 @@ export default function Page() {
               Movie Search App
             </Link>
           </li>
+        </ul>
+      </section>
+      <section className="mt-5">
+        <h3 className="text-lg font-medium">Frontend Libraries</h3>
+        <ul>
           <li>
             <Link href="property-listing" className="underline ml-4">
               Property Listing
+            </Link>
+          </li>
+          <li>
+            <Link href="recipe-page" className="underline ml-4">
+              Recipe Page
             </Link>
           </li>
         </ul>
