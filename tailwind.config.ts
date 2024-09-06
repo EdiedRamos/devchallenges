@@ -17,6 +17,7 @@ const config: Config = {
         "ah-bg-circles": "url('/advanced-homepage/bg-1.svg')",
         "ah-bg-lines": "url('/advanced-homepage/bg-2.svg')",
         "ms-bg": "url('/movie-search-app/hero-image-movie-search.png')",
+        "pl-bg": "url('/property-listing/hero-image.jpg')",
       },
       colors: {
         // multi-step register
@@ -82,6 +83,7 @@ const config: Config = {
         "pl-white": "#F2F9FE",
       },
       fontSize: {
+        "cs-10": "10px",
         "cs-12": "12px",
         "cs-14": "14px",
         "cs-16": "16px",
