@@ -9,7 +9,7 @@ export function MealPreview({ mealPreview }: Props) {
   return (
     <Link
       href={`recipe-page/recipe-detail/${mealPreview.idMeal}`}
-      className="bg-rp-gray p-2 rounded-xl w-full max-w-[250px] hover:opacity-90"
+      className="bg-rp-gray p-2 rounded-xl w-full max-w-[259px] hover:opacity-90"
     >
       <img
         src={mealPreview.strMealThumb}
