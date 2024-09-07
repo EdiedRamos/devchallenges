@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Outfit } from "next/font/google";
+import { Outfit } from "next/font/google";
 import type { PropsWithChildren } from "react";
 
 const outfit = Outfit({

@@ -12,7 +12,7 @@ import { CategoryPreview } from "./categoryPreview";
 export function Categories() {
   const { categories, currentCategory, handleCurrentCategory } = useRecipe();
   return (
-    <section>
+    <section className="w-full max-w-72">
       <h4 className={`${playfair_Display.className} text-cs-24 font-medium`}>
         Categories
       </h4>

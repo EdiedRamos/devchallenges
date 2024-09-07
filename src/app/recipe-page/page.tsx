@@ -1,4 +1,4 @@
-import { Categories, Hero } from "./(components)";
+import { Categories, Content, Hero } from "./(components)";
 import { RecipeProvider } from "./(context)/recipeProvider";
 
 export default function RecipePage() {
@@ -6,7 +6,10 @@ export default function RecipePage() {
     <div className="min-h-screen bg-rp-dark">
       <Hero />
       <RecipeProvider>
-        <Categories />
+        <div className="flex flex-wrap max-w-[1400px] mx-auto mt-8 gap-8">
+          <Categories />
+          <Content />
+        </div>
       </RecipeProvider>
     </div>
   );
