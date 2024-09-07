@@ -6,9 +6,11 @@ export default function RecipePage() {
     <div className="min-h-screen bg-rp-dark">
       <Hero />
       <RecipeProvider>
-        <div className="flex flex-wrap max-w-[1400px] mx-auto mt-8 gap-8">
-          <Categories />
-          <Content />
+        <div className="px-10">
+          <div className="flex flex-wrap max-w-[1400px] mx-auto mt-8 gap-8">
+            <Categories />
+            <Content />
+          </div>
         </div>
       </RecipeProvider>
     </div>
