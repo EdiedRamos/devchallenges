@@ -5,13 +5,13 @@ interface Props {
 }
 export function CategoryPreview({ category }: Props) {
   return (
-    <div className="border border-rp-gray rounded-xl h-20 max-w-96 flex flex-wrap items-center gap-3">
+    <div className="border border-rp-gray rounded-xl h-16 max-w-72 flex flex-wrap items-center gap-3">
       <img
         src={category.strCategoryThumb}
         alt=""
-        className="h-full w-auto -ml-16"
+        className="h-full w-auto -ml-12"
       />
-      <p>{category.strCategory}</p>
+      <p className="text-cs-12 font-medium">{category.strCategory}</p>
     </div>
   );
 }
