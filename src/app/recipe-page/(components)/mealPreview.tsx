@@ -6,7 +6,7 @@ interface Props {
 
 export function MealPreview({ mealPreview }: Props) {
   return (
-    <div className="bg-rp-gray p-2 rounded-xl w-full max-w-[250px]">
+    <div className="bg-rp-gray p-2 rounded-xl w-full max-w-[250px] hover:cursor-pointer hover:opacity-90">
       <img
         src={mealPreview.strMealThumb}
         alt=""
