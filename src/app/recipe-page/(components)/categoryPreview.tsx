@@ -13,7 +13,7 @@ export function CategoryPreview({
   return (
     <div
       onClick={() => onSelectCategory(category)}
-      className={`border border-rp-gray overflow-hidden rounded-xl h-12 max-w-72 flex flex-wrap items-center gap-3 hover:cursor-pointer hover:opacity-80 ${
+      className={`border border-rp-gray overflow-hidden rounded-xl h-[50px] max-w-72 flex flex-wrap items-center gap-3 hover:cursor-pointer hover:opacity-80 ${
         isActive ? "bg-rp-yellow text-rp-dark" : "text-rp-light"
       }`}
     >
