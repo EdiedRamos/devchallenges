@@ -14,7 +14,7 @@ export function MealPreview({ mealPreview }: Props) {
       <img
         src={mealPreview.strMealThumb}
         alt=""
-        className="w-full h-40 rounded-xl object-cover"
+        className="w-full h-44 rounded-xl object-cover"
       />
       <p className="py-3 text-rp-light text-cs-14">{mealPreview.strMeal}</p>
     </Link>
