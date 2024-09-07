@@ -10,7 +10,7 @@ import { useRecipe } from "../(context)";
 import { CategoryPreview } from "./categoryPreview";
 
 export function Categories() {
-  const { categories, currentCategory } = useRecipe();
+  const { categories, currentCategory, handleCurrentCategory } = useRecipe();
   return (
     <section>
       <h4 className={`${playfair_Display.className} text-cs-24 font-medium`}>
@@ -19,9 +19,10 @@ export function Categories() {
       <div className="flex flex-col gap-3 mt-8">
         {categories.map((category) => (
           <CategoryPreview
+            onSelectCategory={handleCurrentCategory}
             key={category.idCategory}
             category={category}
-            isActive={currentCategory === category.idCategory}
+            isActive={currentCategory?.idCategory === category.idCategory}
           />
         ))}
       </div>

@@ -1,9 +1,10 @@
 import { createContext } from "react";
-import { CategoriesT } from "../(models)";
+import { CategoriesT, Category } from "../(models)";
 
 export interface RecipeContext {
   categories: CategoriesT;
-  currentCategory: string;
+  currentCategory: Category | undefined;
+  handleCurrentCategory: (category: Category) => void;
 }
 
 export const recipeContext = createContext<RecipeContext | undefined>(

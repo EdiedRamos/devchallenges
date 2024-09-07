@@ -1,23 +1,33 @@
 "use client";
 
-import { useEffect, useState, type PropsWithChildren } from "react";
+import {
+  useCallback,
+  useEffect,
+  useState,
+  type PropsWithChildren,
+} from "react";
 import { type RecipeContext, recipeContext } from "./recipeContext";
-import { CategoriesT } from "../(models)";
+import type { CategoriesT, Category } from "../(models)";
 import { RecipeService } from "../(services)/recipeService";
 
 function findCategoryId(
   categories: CategoriesT,
   categoryName: string
-): string | null {
+): Category | null {
   const category = categories.find((category) =>
     category.strCategory.toLowerCase().includes(categoryName.toLowerCase())
   );
-  return category ? category.idCategory : null;
+  return category ? category : null;
 }
 
 export function RecipeProvider({ children }: PropsWithChildren) {
   const [categories, setCategories] = useState<CategoriesT>([]);
-  const [currentCategory, setCurrentCategory] = useState<string>("");
+  const [currentCategory, setCurrentCategory] = useState<Category>();
+
+  const handleCurrentCategory = useCallback(
+    (category: Category) => setCurrentCategory(category),
+    []
+  );
 
   useEffect(() => {
     RecipeService.getAllCategories().then((result) => {
@@ -25,11 +35,15 @@ export function RecipeProvider({ children }: PropsWithChildren) {
 
       setCategories(result);
       const dessertCategoryId = findCategoryId(result, "dessert");
-      setCurrentCategory(dessertCategoryId ?? result[0].idCategory);
+      setCurrentCategory(dessertCategoryId ?? result[0]);
     });
   }, []);
 
-  const values: RecipeContext = { categories, currentCategory };
+  const values: RecipeContext = {
+    categories,
+    currentCategory,
+    handleCurrentCategory,
+  };
 
   return (
     <recipeContext.Provider value={values}>{children}</recipeContext.Provider>
