@@ -34,6 +34,7 @@ export function RecipeProvider({ children }: PropsWithChildren) {
   const [mealsBackup, setMealsBackup] = useState<MealsPreviewT>([]);
 
   const [sortBy, setSortBy] = useState<SortBy>("name");
+  const [searchBy, setSearchBy] = useState<string>("");
 
   const handleCurrentCategory = useCallback(
     (category: Category) => setCurrentCategory(category),
@@ -42,6 +43,10 @@ export function RecipeProvider({ children }: PropsWithChildren) {
 
   const handleSortBy = useCallback(
     (criteria: SortBy) => setSortBy(criteria),
+    []
+  );
+  const handleSearchBy = useCallback(
+    (criteria: string) => setSearchBy(criteria),
     []
   );
 
@@ -67,7 +72,7 @@ export function RecipeProvider({ children }: PropsWithChildren) {
 
   useEffect(() => {
     let mealsFiltered = [...mealsBackup];
-    console.log(sortBy);
+
     if (sortBy === "name") {
       mealsFiltered = mealsFiltered.sort((a, b) =>
         a.strMeal > b.strMeal ? 1 : -1
@@ -78,16 +83,23 @@ export function RecipeProvider({ children }: PropsWithChildren) {
       );
     }
 
+    // TODO: Implement seach by instructions or area
+    mealsFiltered = mealsFiltered.filter((meal) =>
+      meal.strMeal.toLowerCase().includes(searchBy.toLowerCase())
+    );
+
     setMealsPreview(mealsFiltered);
-  }, [mealsBackup, sortBy]);
+  }, [mealsBackup, sortBy, searchBy]);
 
   const values: RecipeContext = {
     sortBy,
+    searchBy,
     categories,
     mealsPreview,
     currentCategory,
     handleCurrentCategory,
     handleSortBy,
+    handleSearchBy,
   };
 
   return (
