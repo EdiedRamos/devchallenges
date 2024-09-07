@@ -7,7 +7,12 @@ import {
   type PropsWithChildren,
 } from "react";
 import { type RecipeContext, recipeContext } from "./recipeContext";
-import type { CategoriesT, Category, MealsPreviewT } from "../(models)";
+import {
+  SortBy,
+  type CategoriesT,
+  type Category,
+  type MealsPreviewT,
+} from "../(models)";
 import { RecipeService } from "../(services)/recipeService";
 
 function findCategoryId(
@@ -22,12 +27,21 @@ function findCategoryId(
 
 export function RecipeProvider({ children }: PropsWithChildren) {
   const [categories, setCategories] = useState<CategoriesT>([]);
+
   const [currentCategory, setCurrentCategory] = useState<Category>();
 
   const [mealsPreview, setMealsPreview] = useState<MealsPreviewT>([]);
+  const [mealsBackup, setMealsBackup] = useState<MealsPreviewT>([]);
+
+  const [sortBy, setSortBy] = useState<SortBy>("name");
 
   const handleCurrentCategory = useCallback(
     (category: Category) => setCurrentCategory(category),
+    []
+  );
+
+  const handleSortBy = useCallback(
+    (criteria: SortBy) => setSortBy(criteria),
     []
   );
 
@@ -45,15 +59,35 @@ export function RecipeProvider({ children }: PropsWithChildren) {
     if (!currentCategory) return;
 
     RecipeService.getMealsPreviewByCategory(currentCategory.strCategory).then(
-      (result) => setMealsPreview(result)
+      (result) => {
+        setMealsBackup(result);
+      }
     );
   }, [currentCategory]);
 
+  useEffect(() => {
+    let mealsFiltered = [...mealsBackup];
+    console.log(sortBy);
+    if (sortBy === "name") {
+      mealsFiltered = mealsFiltered.sort((a, b) =>
+        a.strMeal > b.strMeal ? 1 : -1
+      );
+    } else {
+      mealsFiltered = mealsFiltered.sort((a, b) =>
+        a.idMeal > b.idMeal ? 1 : -1
+      );
+    }
+
+    setMealsPreview(mealsFiltered);
+  }, [mealsBackup, sortBy]);
+
   const values: RecipeContext = {
+    sortBy,
     categories,
     mealsPreview,
     currentCategory,
     handleCurrentCategory,
+    handleSortBy,
   };
 
   return (

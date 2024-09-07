@@ -13,7 +13,9 @@ export function Categories() {
   const { categories, currentCategory, handleCurrentCategory } = useRecipe();
   return (
     <section className="w-full max-w-72">
-      <h4 className={`${playfair_Display.className} text-cs-24 font-medium`}>
+      <h4
+        className={`${playfair_Display.className} text-cs-24 font-medium text-rp-light`}
+      >
         Categories
       </h4>
       <div className="flex flex-col gap-3 mt-8">

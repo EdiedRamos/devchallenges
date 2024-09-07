@@ -14,3 +14,7 @@ export interface MealPreview {
 }
 
 export type MealsPreviewT = MealPreview[];
+
+// sorting
+
+export type SortBy = "name" | "id";
