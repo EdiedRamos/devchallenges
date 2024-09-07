@@ -14,7 +14,7 @@ export function CategoryPreview({ isActive = false, category }: Props) {
       <img
         src={category.strCategoryThumb}
         alt=""
-        className="h-full w-auto -ml-12"
+        className="h-full w-24 -ml-12 object-cover"
       />
       <p className="text-cs-12 font-medium">{category.strCategory}</p>
     </div>
