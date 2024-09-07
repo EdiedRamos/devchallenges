@@ -1,7 +1,7 @@
 export function Hero() {
   return (
     <div className="p-3">
-      <div className="relative h-[400px] bg-rp-bg bg-no-repeat bg-cover bg-center rounded-xl">
+      <div className="relative h-[430px] bg-rp-bg bg-no-repeat bg-cover bg-center rounded-xl">
         <img
           src="/recipe-page/hero-text.svg"
           alt=""
