@@ -12,7 +12,7 @@ import { CategoryPreview } from "./categoryPreview";
 export function Categories() {
   const { categories, currentCategory, handleCurrentCategory } = useRecipe();
   return (
-    <div className="w-full max-w-80 flex justify-end">
+    <div className="w-full max-w-72 flex justify-end">
       <section className="w-full max-w-64">
         <h4
           className={`${playfair_Display.className} text-cs-24 font-medium text-rp-light`}
