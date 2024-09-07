@@ -7,7 +7,7 @@ import {
   type PropsWithChildren,
 } from "react";
 import { type RecipeContext, recipeContext } from "./recipeContext";
-import type { CategoriesT, Category } from "../(models)";
+import type { CategoriesT, Category, MealsPreviewT } from "../(models)";
 import { RecipeService } from "../(services)/recipeService";
 
 function findCategoryId(
@@ -24,6 +24,8 @@ export function RecipeProvider({ children }: PropsWithChildren) {
   const [categories, setCategories] = useState<CategoriesT>([]);
   const [currentCategory, setCurrentCategory] = useState<Category>();
 
+  const [mealsPreview, setMealsPreview] = useState<MealsPreviewT>([]);
+
   const handleCurrentCategory = useCallback(
     (category: Category) => setCurrentCategory(category),
     []
@@ -39,8 +41,17 @@ export function RecipeProvider({ children }: PropsWithChildren) {
     });
   }, []);
 
+  useEffect(() => {
+    if (!currentCategory) return;
+
+    RecipeService.getMealsPreviewByCategory(currentCategory.strCategory).then(
+      (result) => setMealsPreview(result)
+    );
+  }, [currentCategory]);
+
   const values: RecipeContext = {
     categories,
+    mealsPreview,
     currentCategory,
     handleCurrentCategory,
   };

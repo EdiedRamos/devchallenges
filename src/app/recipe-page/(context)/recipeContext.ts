@@ -1,8 +1,9 @@
 import { createContext } from "react";
-import { CategoriesT, Category } from "../(models)";
+import { CategoriesT, Category, MealsPreviewT } from "../(models)";
 
 export interface RecipeContext {
   categories: CategoriesT;
+  mealsPreview: MealsPreviewT;
   currentCategory: Category | undefined;
   handleCurrentCategory: (category: Category) => void;
 }

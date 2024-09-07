@@ -6,3 +6,11 @@ export interface Category {
 }
 
 export type CategoriesT = Category[];
+
+export interface MealPreview {
+  strMeal: string;
+  strMealThumb: string;
+  idMeal: string;
+}
+
+export type MealsPreviewT = MealPreview[];
