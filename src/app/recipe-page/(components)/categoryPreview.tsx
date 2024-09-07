@@ -7,7 +7,7 @@ interface Props {
 export function CategoryPreview({ isActive = false, category }: Props) {
   return (
     <div
-      className={`border border-rp-gray rounded-xl h-16 max-w-72 flex flex-wrap items-center gap-3 hover:cursor-pointer hover:opacity-80 ${
+      className={`border border-rp-gray overflow-hidden rounded-xl h-16 max-w-72 flex flex-wrap items-center gap-3 hover:cursor-pointer hover:opacity-80 ${
         isActive ? "bg-rp-yellow text-rp-dark" : "text-rp-light"
       }`}
     >
