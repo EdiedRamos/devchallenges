@@ -5,7 +5,7 @@ export function Hero() {
         <img
           src="/recipe-page/hero-text.svg"
           alt=""
-          className="absolute top-[52px] right-6 md:right-[120px] lg:right-[226px]"
+          className="absolute top-[52px] right-6 md:right-[120px] lg:right-[225px]"
         />
       </div>
     </div>
