@@ -1,8 +1,8 @@
-"use client";
-
 import type {
   CategoriesT,
   CategoryResponse,
+  Meal,
+  MealByIdResponse,
   MealPreviewResponse,
   MealsPreviewT,
 } from "../(models)";
@@ -29,6 +29,19 @@ export const RecipeService = {
       return data.meals;
     } catch {
       return [];
+    }
+  },
+
+  async getMealById(mealId: string): Promise<Meal | null> {
+    try {
+      const response = await fetch(
+        `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`
+      );
+      const data = (await response.json()) as MealByIdResponse;
+      if (data.meals.length === 0) return null;
+      return data.meals[0];
+    } catch {
+      return null;
     }
   },
 };
