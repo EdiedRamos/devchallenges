@@ -1,3 +1,10 @@
+import { FeatureList, Heading, RootLayout } from "./(components)";
+
 export default function FeatureSection() {
-  return <div>FeatureSection</div>;
+  return (
+    <RootLayout>
+      <Heading />
+      <FeatureList />
+    </RootLayout>
+  );
 }

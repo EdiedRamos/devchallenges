@@ -19,6 +19,7 @@ const config: Config = {
         "ms-bg": "url('/movie-search-app/hero-image-movie-search.png')",
         "pl-bg": "url('/property-listing/hero-image.jpg')",
         "rp-bg": "url('/recipe-page/hero-imagehc.jpg')",
+        "fs-bg": "url('/feature-section/Background_image.svg')",
       },
       colors: {
         // multi-step register
