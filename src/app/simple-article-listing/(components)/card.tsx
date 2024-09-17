@@ -14,7 +14,7 @@ export function Card({ card }: Props) {
       <img
         src={card.image}
         alt={`${card.first} image`}
-        className="rounded-xl w-full max-w-[160px] h-[160px]"
+        className="rounded-xl w-full max-w-[160px] h-[160px] hover:animate-bounce"
       />
       <div>
         <h3 className="text-sal-black font-bold text-cs-20 max-w-[540px]">
