@@ -34,6 +34,11 @@ export default function Page() {
               Join Our Newsletter
             </Link>
           </li>
+          <li>
+            <Link href="simple-article-listing" className="underline ml-4">
+              Simple Article Listing
+            </Link>
+          </li>
         </ul>
       </section>
       <section className="mt-5">

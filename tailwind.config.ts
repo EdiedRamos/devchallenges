@@ -95,6 +95,11 @@ const config: Config = {
         "jo-blue": "#3662E3",
         "jo-cream": "#F9FAFB",
         "jo-light-gray": "#E5E7EB",
+        // simple article listing
+        "sal-black": "#000000",
+        "sal-gray": "#6C727F",
+        "sal-cream": "#D9D9D9",
+        "sal-white": "#F8FAFC",
       },
       fontSize: {
         "cs-10": "10px",
