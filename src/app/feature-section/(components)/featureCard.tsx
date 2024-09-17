@@ -17,7 +17,9 @@ export function FeatureCard({ feature }: Props) {
       <h3 className="mt-4 text-cs-20 font-medium text-fs-white">
         {feature.title}
       </h3>
-      <p className="my-4 text-fs-gray text-cs-16">{feature.description}</p>
+      <p className="my-4 text-fs-gray text-cs-16 max-w-[250px]">
+        {feature.description}
+      </p>
       <img
         className="rounded-lg"
         src={feature.image}
