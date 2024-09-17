@@ -100,7 +100,16 @@ const config: Config = {
         "sal-gray": "#6C727F",
         "sal-cream": "#D9D9D9",
         "sal-white": "#F8FAFC",
+        // feature section
+        "fs-black": "#121826",
+        "fs-gray": "#9DA3AE",
+        "fs-white": "#E5E7EB",
+        "fs-dark": "#212936",
+        "fs-sky": "#DEE9FC",
+        "fs-skin": "#FBE5E6",
+        "fs-cream": "#FCEED8",
       },
+
       fontSize: {
         "cs-10": "10px",
         "cs-12": "12px",
@@ -110,6 +119,7 @@ const config: Config = {
         "cs-20": "20px",
         "cs-24": "24px",
         "cs-36": "36px",
+        "cs-40": "40px",
         "cs-48": "48px",
         "cs-60": "60px",
         "cs-64": "64px",

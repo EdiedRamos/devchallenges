@@ -39,6 +39,11 @@ export default function Page() {
               Simple Article Listing
             </Link>
           </li>
+          <li>
+            <Link href="feature-section" className="underline ml-4">
+              Feature Section
+            </Link>
+          </li>
         </ul>
       </section>
       <section className="mt-5">
