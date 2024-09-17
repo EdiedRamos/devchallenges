@@ -88,6 +88,13 @@ const config: Config = {
         "rp-light": "#E5E7EB",
         "rp-dark": "#0E1325",
         "rp-gray": "#394150",
+        // join our newsletter
+        "jo-gray": "#6C727F",
+        "jo-white": "#FFF",
+        "jo-black": "#000",
+        "jo-blue": "#3662E3",
+        "jo-cream": "#F9FAFB",
+        "jo-light-gray": "#E5E7EB",
       },
       fontSize: {
         "cs-10": "10px",

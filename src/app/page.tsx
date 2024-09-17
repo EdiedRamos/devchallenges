@@ -29,6 +29,11 @@ export default function Page() {
               Advanced Homepage - Hufie
             </Link>
           </li>
+          <li>
+            <Link href="join-our-newsletter" className="underline ml-4">
+              Join Our Newsletter
+            </Link>
+          </li>
         </ul>
       </section>
       <section className="mt-5">
