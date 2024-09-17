@@ -12,7 +12,7 @@ type Props = { feature: FeatureI };
 
 export function FeatureCard({ feature }: Props) {
   return (
-    <article className="bg-fs-dark w-full max-w-[324px] p-6 rounded-lg">
+    <article className="bg-fs-dark w-full max-w-[324px] p-6 rounded-lg hover:cursor-pointer hover:translate-y-4 transition-all">
       {feature.Icon()}
       <h3 className="mt-4 text-cs-20 font-medium text-fs-white">
         {feature.title}
