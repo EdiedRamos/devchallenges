@@ -19,7 +19,7 @@ export default function FrequentlyAskedQuestion() {
         </p>
       </div>
       <div className="max-w-[640px] mx-auto">
-        <h3 className="text-cs-24 font-bold mt-[72px]">
+        <h3 id="tracking" className="text-cs-24 font-bold mt-[72px]">
           How can I track my order?
         </h3>
         <p className="mt-8">
@@ -27,7 +27,10 @@ export default function FrequentlyAskedQuestion() {
         </p>
         <ol className="pl-5 list-decimal mt-6">
           <li>
-            Go to the Order <span className="text-faq-blue">Tracking page</span>
+            Go to the Order{" "}
+            <a href="#tracking" className="text-faq-blue">
+              Tracking page
+            </a>
             .
           </li>
           <li>Enter your order number and email address.</li>
@@ -41,7 +44,7 @@ export default function FrequentlyAskedQuestion() {
           <span className="text-faq-blue">Help Center</span>.
         </p>
         <div className="w-full h-[2px] bg-faq-gray my-10" />
-        <h3 className="text-cs-24 font-bold mt-[72px]">
+        <h3 id="policy" className="text-cs-24 font-bold mt-[72px]">
           What is your return policy?
         </h3>
         <p className="mt-8">
@@ -68,7 +71,10 @@ export default function FrequentlyAskedQuestion() {
         </ul>
         <p className="mt-6">
           For more detailed information, read our full{" "}
-          <span className="text-faq-blue">Return Policy</span>.
+          <a href="#policy" className="text-faq-blue">
+            Return Policy
+          </a>
+          .
         </p>
       </div>
     </main>
