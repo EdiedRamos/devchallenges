@@ -109,6 +109,12 @@ const config: Config = {
         "fs-sky": "#DEE9FC",
         "fs-skin": "#FBE5E6",
         "fs-cream": "#FCEED8",
+        // frecuently asked questions
+        "faq-blue": "#4E80EE",
+        "faq-black": "#030616",
+        "faq-gray": "#D2D5DA",
+        "faq-light": "#F8FAFC",
+        "faq-white": "#FFFFFF",
       },
 
       fontSize: {

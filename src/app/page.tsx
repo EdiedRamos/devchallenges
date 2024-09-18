@@ -44,6 +44,11 @@ export default function Page() {
               Feature Section
             </Link>
           </li>
+          <li>
+            <Link href="frequently-asked-questions" className="underline ml-4">
+              Frequently Asked Questions
+            </Link>
+          </li>
         </ul>
       </section>
       <section className="mt-5">
