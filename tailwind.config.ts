@@ -122,6 +122,17 @@ const config: Config = {
         "spp-gray-200": "#D2D5DA",
         "spp-gray-300": "#9DA3AE",
         "spp-purple": "#845EEE",
+        // meet the team
+        "mtt-white": "#FFFEFE",
+        "mtt-light": "#F3F4F6",
+        "mtt-dark": "#394150",
+        "mtt-black": "#000000",
+        "mtt-blue": "#3662E3",
+        "mtt-mint-green": "#86E7D4",
+        "mtt-pastel-blue": "#9DC4F8",
+        "mtt-purple": "#C1B6F8",
+        "mtt-pink": "#EDACD2",
+        "mtt-yellow": "#F8D8B0",
       },
 
       fontSize: {

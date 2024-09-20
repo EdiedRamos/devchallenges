@@ -50,6 +50,11 @@ export const RESPONSIVE_PROJECTS: Project[] = [
     name: "Simple Product Page",
     url: "simple-product-page",
   },
+  {
+    id: "20282c86-066b-4f4b-b041-3ff9e18a0b71",
+    name: "Meet The Team",
+    url: "meet-the-team",
+  },
 ];
 
 export const JAVASCRIPT_PROJECTS: Project[] = [
