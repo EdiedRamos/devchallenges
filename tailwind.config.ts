@@ -115,6 +115,13 @@ const config: Config = {
         "faq-gray": "#D2D5DA",
         "faq-light": "#F8FAFC",
         "faq-white": "#FFFFFF",
+        // simple product page
+        "spp-dark": "#121826",
+        "spp-light": "#F9FAFB",
+        "spp-gray-100": "#F3F4F6",
+        "spp-gray-200": "#D2D5DA",
+        "spp-gray-300": "#9DA3AE",
+        "spp-purple": "#845EEE",
       },
 
       fontSize: {

@@ -45,6 +45,11 @@ export const RESPONSIVE_PROJECTS: Project[] = [
     name: "Frequently Asked Questions",
     url: "frequently-asked-questions",
   },
+  {
+    id: "df0b25eb-c58d-4e16-a20d-c14c0a3ae159",
+    name: "Simple Product Page",
+    url: "simple-product-page",
+  },
 ];
 
 export const JAVASCRIPT_PROJECTS: Project[] = [
