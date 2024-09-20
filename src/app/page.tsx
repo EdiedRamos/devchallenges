@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { JAVASCRIPT_PROJECTS, RESPONSIVE_PROJECTS } from "./projects.data";
 
 export default function Page() {
   return (
@@ -9,81 +10,37 @@ export default function Page() {
       <section>
         <h3 className="text-lg font-medium">Responsive Web Design</h3>
         <ul>
-          <li>
-            <Link href="single-homepage" className="underline ml-4">
-              Single Homepage
-            </Link>
-          </li>
-          <li>
-            <Link href="process-page" className="underline ml-4">
-              Process Page
-            </Link>
-          </li>
-          <li>
-            <Link href="faq-page" className="underline ml-4">
-              FAQ Page
-            </Link>
-          </li>
-          <li>
-            <Link href="advanced-homepage" className="underline ml-4">
-              Advanced Homepage - Hufie
-            </Link>
-          </li>
-          <li>
-            <Link href="join-our-newsletter" className="underline ml-4">
-              Join Our Newsletter
-            </Link>
-          </li>
-          <li>
-            <Link href="simple-article-listing" className="underline ml-4">
-              Simple Article Listing
-            </Link>
-          </li>
-          <li>
-            <Link href="feature-section" className="underline ml-4">
-              Feature Section
-            </Link>
-          </li>
-          <li>
-            <Link href="frequently-asked-questions" className="underline ml-4">
-              Frequently Asked Questions
-            </Link>
-          </li>
+          {RESPONSIVE_PROJECTS.map((project) => (
+            <li key={project.id}>
+              <Link href={project.url} className="underline ml-4">
+                {project.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </section>
       <section className="mt-5">
         <h3 className="text-lg font-medium">Javascript</h3>
         <ul>
-          <li>
-            <Link href="multi-step-register" className="underline ml-4">
-              Multi-step Register Form
-            </Link>
-          </li>
-          <li>
-            <Link href="basic-text-to-speech" className="underline ml-4">
-              Basic Text To Speech
-            </Link>
-          </li>
-          <li>
-            <Link href="movie-search-app" className="underline ml-4">
-              Movie Search App
-            </Link>
-          </li>
+          {JAVASCRIPT_PROJECTS.map((project) => (
+            <li key={project.id}>
+              <Link href={project.url} className="underline ml-4">
+                {project.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </section>
       <section className="mt-5">
         <h3 className="text-lg font-medium">Frontend Libraries</h3>
         <ul>
-          <li>
-            <Link href="property-listing" className="underline ml-4">
-              Property Listing
-            </Link>
-          </li>
-          <li>
-            <Link href="recipe-page" className="underline ml-4">
-              Recipe Page
-            </Link>
-          </li>
+          {JAVASCRIPT_PROJECTS.map((project) => (
+            <li key={project.id}>
+              <Link href={project.url} className="underline ml-4">
+                {project.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </section>
     </div>
