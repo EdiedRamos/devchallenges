@@ -9,7 +9,7 @@ import {
 
 export default function ProductPage() {
   return (
-    <section className="min-h-screen bg-spp-light flex flex-wrap gap-[52px] py-9 pl-9">
+    <section className="min-h-screen bg-spp-light flex flex-wrap gap-[52px] py-9 px-1 md:px-9">
       <div>
         <img
           className="rounded-md"
