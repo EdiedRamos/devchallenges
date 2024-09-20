@@ -132,6 +132,7 @@ const config: Config = {
         "cs-18": "18px",
         "cs-20": "20px",
         "cs-24": "24px",
+        "cs-32": "32px",
         "cs-36": "36px",
         "cs-40": "40px",
         "cs-48": "48px",
