@@ -18,9 +18,13 @@ export function ImageC({
       <img src={src} alt={alt} className="w-full h-full" />
       {(title || description) && (
         <div className="absolute top-0 z-10 h-full w-full flex items-end">
-          <div className="bg-gradient-to-t from-mtt-dark w-full p-6">
-            {title && <h6 className="text-cs-20 font-medium">{title}</h6>}
-            {description && <p className="text-cs-14">{description}</p>}
+          <div className="bg-gradient-to-t from-gray-700 w-full p-6">
+            {title && (
+              <h6 className="text-cs-20 font-medium text-mtt-white">{title}</h6>
+            )}
+            {description && (
+              <p className="text-cs-14 text-mtt-light">{description}</p>
+            )}
           </div>
         </div>
       )}

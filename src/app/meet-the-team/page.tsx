@@ -3,9 +3,9 @@ import { ImageC } from "./(components)";
 export default function MeetTheTeamPage() {
   return (
     <section className="min-h-screen bg-mtt-white py-[72px]">
-      <div className="bg-mtt-light min-h-[500px] max-w-[284px] md:max-w-[500px] lg:max-w-[1100px] mx-auto rounded-2xl bg-mtt-bg bg-no-repeat grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 grid-rows-2 overflow-hidden">
+      <div className="bg-mtt-light min-h-[500px] max-w-[284px] md:max-w-[500px] lg:max-w-[1135px] mx-auto rounded-2xl bg-mtt-bg bg-no-repeat grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 grid-rows-2 overflow-hidden">
         <article className="md:col-span-2 p-8">
-          <p className="text-mtt-blue">Our team</p>
+          <p className="text-mtt-blue text-cs-14">Our team</p>
           <h2 className="text-mtt-black text-cs-40 font-bold">
             Meet the brain
           </h2>
