@@ -20,6 +20,7 @@ const config: Config = {
         "pl-bg": "url('/property-listing/hero-image.jpg')",
         "rp-bg": "url('/recipe-page/hero-imagehc.jpg')",
         "fs-bg": "url('/feature-section/Background_image.svg')",
+        "mtt-bg": "url('/meet-the-team/Background_decor.svg')",
       },
       colors: {
         // multi-step register
