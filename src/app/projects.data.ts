@@ -55,6 +55,11 @@ export const RESPONSIVE_PROJECTS: Project[] = [
     name: "Meet The Team",
     url: "meet-the-team",
   },
+  {
+    id: "082baa62-71d7-4987-af87-6af86412e9ca",
+    name: "Device Shop Checkout",
+    url: "device-shop-checkout",
+  },
 ];
 
 export const JAVASCRIPT_PROJECTS: Project[] = [

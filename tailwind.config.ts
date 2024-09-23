@@ -21,6 +21,7 @@ const config: Config = {
         "rp-bg": "url('/recipe-page/hero-imagehc.jpg')",
         "fs-bg": "url('/feature-section/Background_image.svg')",
         "mtt-bg": "url('/meet-the-team/Background_decor.svg')",
+        "dsc-bg": "url('/device-shop-checkout/background.png')",
       },
       colors: {
         // multi-step register
@@ -134,6 +135,14 @@ const config: Config = {
         "mtt-purple": "#C1B6F8",
         "mtt-pink": "#EDACD2",
         "mtt-yellow": "#F8D8B0",
+        // device shop checkout
+        "dsc-gray-100": "#D2D5DA",
+        "dsc-gray-200": "#6C727F",
+        "dsc-gray-tr": "#00000033",
+        "dsc-white": "#FFFFFF",
+        "dsc-light": "#F3F4F6",
+        "dsc-black": "#1D1D1F",
+        "dsc-blue": "#95AAD0",
       },
 
       fontSize: {
