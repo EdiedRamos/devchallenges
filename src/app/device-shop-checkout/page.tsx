@@ -1,3 +1,9 @@
+import { Hero } from "./(components)";
+
 export default function DeviceShopCheckout() {
-  return <div>device shop checkout</div>;
+  return (
+    <section className="min-h-screen bg-dsc-light">
+      <Hero />
+    </section>
+  );
 }
