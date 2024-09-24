@@ -2,7 +2,7 @@ import { ImagePreview as Component } from "./imagePreview";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
-  title: "DeviceShopCheckout",
+  title: "DeviceShopCheckout/previewImage",
   component: Component,
   args: {
     imageSrc: "/device-shop-checkout/gold.png",
