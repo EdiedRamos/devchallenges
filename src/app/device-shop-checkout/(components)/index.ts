@@ -5,3 +5,4 @@ export * from "./input/input";
 export * from "./productItem/productItem";
 
 export * from "./productGrid";
+export * from "./shopCart";
