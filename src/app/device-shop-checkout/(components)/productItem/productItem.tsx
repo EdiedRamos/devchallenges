@@ -1,12 +1,14 @@
 import { ImagePreview } from "../imagePreview/imagePreview";
 
-interface Props {
+export interface ProductItem {
   productImage: string;
   productName: string;
   productColor: string;
   quantity: number;
   total: number;
 }
+
+interface Props extends ProductItem {}
 
 export function ProductItem({
   productImage,
