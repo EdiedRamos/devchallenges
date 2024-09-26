@@ -26,7 +26,7 @@ const DATA: ProductItem[] = [
 
 export function ProductGrid() {
   return (
-    <div className="flex flex-col gap-[26px] border-b border-dsc-gray-100 pb-6">
+    <div className="flex flex-col gap-[26px] border-b border-dsc-gray-100 pb-5">
       {DATA.map((product) => (
         <ProductItem key={product.productName} {...product} />
       ))}
