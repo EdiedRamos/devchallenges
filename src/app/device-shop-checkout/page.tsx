@@ -28,7 +28,7 @@ export default function DeviceShopCheckout() {
         {/* right part */}
         <div className="bg-dsc-white p-8">
           <form className="text-dsc-gray-200">
-            <h4 className="text-dsc-black font-bold mb-8">
+            <h4 className="text-dsc-black font-medium mb-7">
               Contact Information
             </h4>
             <div className="grid gap-7">
