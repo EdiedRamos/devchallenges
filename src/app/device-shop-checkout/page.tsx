@@ -20,7 +20,7 @@ export default function DeviceShopCheckout() {
               <Input placeholder="Enter coupon code" />
             </div>
             <div className="lg:col-start-7">
-              <Button>Apply Coupon</Button>
+              <Button padding="p-3">Apply Coupon</Button>
             </div>
           </div>
           <ShopCart />
