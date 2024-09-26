@@ -138,7 +138,7 @@ const config: Config = {
         // device shop checkout
         "dsc-gray-100": "#D2D5DA",
         "dsc-gray-200": "#6C727F",
-        "dsc-gray-tr": "#00000033",
+        "dsc-gray-tr": "#E6E7EB",
         "dsc-white": "#FFFFFF",
         "dsc-light": "#F3F4F6",
         "dsc-black": "#1D1D1F",

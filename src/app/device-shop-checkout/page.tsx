@@ -13,7 +13,7 @@ export default function DeviceShopCheckout() {
       <Hero />
       <div className="grid grid-cols-1 lg:grid-cols-2 max-w-[1200px] mx-auto -mt-32 bg-dsc-light rounded-2xl shadow-lg justify-between overflow-hidden">
         {/* left part */}
-        <div className="p-8">
+        <div className="p-8 bg-dsc-gray-tr">
           <ProductGrid />
           <div className="grid grid-columns-1 lg:grid-columns-12 my-6 gap-2">
             <div className="lg:col-start-1 lg:col-end-7">

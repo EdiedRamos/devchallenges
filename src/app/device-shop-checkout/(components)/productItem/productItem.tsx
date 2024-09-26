@@ -25,7 +25,7 @@ export function ProductItem({
       <div className="font-medium flex flex-wrap flex-1 justify-between">
         <div className="flex flex-col justify-between">
           <div>
-            <p className="text-dsc-black text-cs-18">{productName}</p>
+            <p className="text-dsc-black font-bold">{productName}</p>
             <p className="text-dsc-gray-200">{productColor}</p>
           </div>
           <p className="text-dsc-gray-200">x {quantity}</p>
