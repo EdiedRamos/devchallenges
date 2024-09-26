@@ -6,3 +6,4 @@ export * from "./productItem/productItem";
 
 export * from "./productGrid";
 export * from "./shopCart";
+export * from "./customLabel";
