@@ -9,7 +9,7 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
 function getTheme(theme: Theme): string {
   switch (theme) {
     case "primary":
-      return "bg-dsc-white p-3";
+      return "bg-dsc-white border-dsc-gray-100 p-3";
     case "secondary":
       return "bg-dsc-light p-4";
     default:
@@ -19,11 +19,13 @@ function getTheme(theme: Theme): string {
 
 export function Input({ theme = "primary", ...props }: Props) {
   return (
-    <input
-      className={`w-full border rounded-xl outline-none focus:border-dsc-gray-200 text-dsc-black placeholder:text-dsc-gray-200 font-medium ${getTheme(
-        theme
-      )}`}
-      {...props}
-    />
+    <div>
+      <input
+        className={`w-full border rounded-lg outline-none focus:border-dsc-gray-200 text-dsc-black placeholder:text-dsc-gray-200 font-medium ${getTheme(
+          theme
+        )}`}
+        {...props}
+      />
+    </div>
   );
 }

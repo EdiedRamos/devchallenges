@@ -33,7 +33,9 @@ export default function DeviceShopCheckout() {
             </h4>
             <div className="grid gap-7">
               <CustomLabel>
-                <span className="text-cs-14">First & Last name</span>
+                <span className="text-cs-14 font-medium">
+                  First & Last name
+                </span>
                 <Input
                   type="text"
                   placeholder="Enter first & last name"
@@ -41,7 +43,7 @@ export default function DeviceShopCheckout() {
                 />
               </CustomLabel>
               <CustomLabel>
-                <span className="text-cs-14">Email Address</span>
+                <span className="text-cs-14 font-medium">Email Address</span>
                 <Input
                   type="text"
                   placeholder="Enter email address"
@@ -50,13 +52,13 @@ export default function DeviceShopCheckout() {
               </CustomLabel>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <CustomLabel>
-                  <span className="text-cs-14">Country</span>
+                  <span className="text-cs-14 font-medium">Country</span>
                   <select className="bg-dsc-light p-4 rounded-xl border text-dsc-black font-medium">
                     <option>Finland</option>
                   </select>
                 </CustomLabel>
                 <CustomLabel>
-                  <span className="text-cs-14">Postal Code</span>
+                  <span className="text-cs-14 font-medium">Postal Code</span>
                   <Input type="text" value={"00270"} theme="secondary" />
                 </CustomLabel>
               </div>
