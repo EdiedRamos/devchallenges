@@ -37,6 +37,7 @@ export default function DeviceShopCheckout() {
                   First & Last name
                 </span>
                 <Input
+                  required
                   type="text"
                   placeholder="Enter first & last name"
                   theme="secondary"
@@ -45,7 +46,8 @@ export default function DeviceShopCheckout() {
               <CustomLabel>
                 <span className="text-cs-14 font-medium">Email Address</span>
                 <Input
-                  type="text"
+                  required
+                  type="email"
                   placeholder="Enter email address"
                   theme="secondary"
                 />
