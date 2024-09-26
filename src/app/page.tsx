@@ -1,5 +1,9 @@
 import Link from "next/link";
-import { JAVASCRIPT_PROJECTS, RESPONSIVE_PROJECTS } from "./projects.data";
+import {
+  FRONTEND_PROJECTS,
+  JAVASCRIPT_PROJECTS,
+  RESPONSIVE_PROJECTS,
+} from "./projects.data";
 
 export default function Page() {
   return (
@@ -8,7 +12,12 @@ export default function Page() {
         DevChallanges Solutions 😁
       </h2>
       <section>
-        <h3 className="text-lg font-medium">Responsive Web Design</h3>
+        <h3 className="text-lg font-medium">
+          Responsive Web Design{" "}
+          <span className="font-bold text-orange-200">
+            ({RESPONSIVE_PROJECTS.length})
+          </span>
+        </h3>
         <ul>
           {RESPONSIVE_PROJECTS.map((project) => (
             <li key={project.id}>
@@ -20,7 +29,12 @@ export default function Page() {
         </ul>
       </section>
       <section className="mt-5">
-        <h3 className="text-lg font-medium">Javascript</h3>
+        <h3 className="text-lg font-medium">
+          Javascript{" "}
+          <span className="font-bold text-orange-200">
+            ({JAVASCRIPT_PROJECTS.length})
+          </span>
+        </h3>
         <ul>
           {JAVASCRIPT_PROJECTS.map((project) => (
             <li key={project.id}>
@@ -32,9 +46,14 @@ export default function Page() {
         </ul>
       </section>
       <section className="mt-5">
-        <h3 className="text-lg font-medium">Frontend Libraries</h3>
+        <h3 className="text-lg font-medium">
+          Frontend Libraries{" "}
+          <span className="font-bold text-orange-200">
+            ({FRONTEND_PROJECTS.length})
+          </span>
+        </h3>
         <ul>
-          {JAVASCRIPT_PROJECTS.map((project) => (
+          {FRONTEND_PROJECTS.map((project) => (
             <li key={project.id}>
               <Link href={project.url} className="underline ml-4">
                 {project.name}
