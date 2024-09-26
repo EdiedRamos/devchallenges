@@ -7,7 +7,7 @@ export interface Props {
 
 export function ImagePreview({ imageSrc, alt }: Props) {
   return (
-    <div className="flex items-center justify-center w-[100px] h-[100px] border rounded-xl bg-dsc-white">
+    <div className="flex items-center justify-center w-[100px] h-[100px] border rounded-xl bg-dsc-light">
       <img
         className="w-[80px] h-[80px] object-contain"
         src={imageSrc}

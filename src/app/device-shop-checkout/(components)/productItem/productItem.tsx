@@ -31,9 +31,7 @@ export function ProductItem({
           <p className="text-dsc-gray-200">x {quantity}</p>
         </div>
         <div className="flex flex-col justify-between items-end">
-          <p className="text-dsc-black font-bold text-cs-18">
-            ${total.toFixed(2)}
-          </p>
+          <p className="text-dsc-black font-bold">${total.toFixed(2)}</p>
           <button>
             <img src="/device-shop-checkout/close-icon.svg" alt="close icon" />
           </button>

@@ -11,7 +11,7 @@ export default function DeviceShopCheckout() {
   return (
     <section className="min-h-screen bg-dsc-light">
       <Hero />
-      <div className="grid grid-cols-1 lg:grid-cols-2 max-w-[1200px] mx-auto -mt-32 bg-dsc-light rounded-2xl shadow-lg justify-between overflow-hidden">
+      <div className="grid grid-cols-1 lg:grid-cols-2 max-w-[1200px] mx-auto -mt-[125px] bg-dsc-light rounded-2xl shadow-lg justify-between overflow-hidden">
         {/* left part */}
         <div className="p-8 bg-dsc-gray-tr">
           <ProductGrid />
