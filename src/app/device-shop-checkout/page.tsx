@@ -15,11 +15,11 @@ export default function DeviceShopCheckout() {
         {/* left part */}
         <div className="p-8 bg-dsc-gray-tr">
           <ProductGrid />
-          <div className="grid grid-columns-1 lg:grid-columns-12 my-6 gap-2">
-            <div className="lg:col-start-1 lg:col-end-7">
+          <div className="grid grid-columns-1 my-6 gap-2">
+            <div className="lg:col-start-1 lg:col-end-4">
               <Input placeholder="Enter coupon code" />
             </div>
-            <div className="lg:col-start-7">
+            <div className="lg:col-start-4">
               <Button padding="p-3">Apply Coupon</Button>
             </div>
           </div>
