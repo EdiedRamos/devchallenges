@@ -1,3 +1,9 @@
+import { Header } from "./(components)";
+
 export default function BentoBoxLayout() {
-  return <div>bento box layout</div>;
+  return (
+    <div className="min-h-screen bg-bbl-white pb-10">
+      <Header />
+    </div>
+  );
 }
