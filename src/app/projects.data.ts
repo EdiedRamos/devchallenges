@@ -60,6 +60,11 @@ export const RESPONSIVE_PROJECTS: Project[] = [
     name: "Device Shop Checkout",
     url: "device-shop-checkout",
   },
+  {
+    id: "0fe85c5d-1b10-4341-81d6-63db837a1223",
+    name: "Bento Box Layout",
+    url: "bento-box-layout",
+  },
 ];
 
 export const JAVASCRIPT_PROJECTS: Project[] = [

@@ -143,6 +143,11 @@ const config: Config = {
         "dsc-light": "#F3F4F6",
         "dsc-black": "#1D1D1F",
         "dsc-blue": "#95AAD0",
+        // bento box layout
+        "bbl-black": "#000",
+        "bbl-white": "#FFF",
+        "bbl-gray": "#6C727F",
+        "bbl-light": "#F3F4F6",
       },
 
       fontSize: {
