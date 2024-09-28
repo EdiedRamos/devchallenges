@@ -7,18 +7,18 @@ function SectionTitle({ children }: PropsWithChildren) {
 export function Navigation() {
   return (
     <nav>
-      <div className="flex flex-wrap gap-2 items-center">
+      <div className="flex flex-wrap gap-[10px] items-center">
         <img src="/bank-dashboard/House.svg" alt="dashboard icon" />
         <p>Dashboard</p>
       </div>
       <SectionTitle>ANALYTICS</SectionTitle>
       <div className="grid gap-5">
-        <div className="flex flex-wrap gap-2 items-center">
+        <div className="flex flex-wrap gap-[10px] items-center">
           <img src="/bank-dashboard/show chart-1.svg" alt="performance icon" />
           <p>Performance</p>
         </div>
-        <div className="flex flex-wrap gap-2 justify-between">
-          <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-[10px] justify-between">
+          <div className="flex flex-wrap gap-[10px]">
             <img src="/bank-dashboard/Archery.svg" alt="dashboard icon" />
             <p>Hotjar</p>
           </div>
@@ -32,7 +32,7 @@ export function Navigation() {
       <SectionTitle>SUPPORT</SectionTitle>
       <div className="grid gap-5">
         <div className="flex flex-wrap justify-between">
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-[10px]">
             <img src="/bank-dashboard/ticket.svg" alt="ticket icon" />
             <p>Tickets</p>
           </div>
@@ -42,26 +42,26 @@ export function Navigation() {
             </span>
           </div>
         </div>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-[10px]">
           <img src="/bank-dashboard/account.svg" alt="account icon" />
           <p>Agents</p>
         </div>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-[10px]">
           <img src="/bank-dashboard/users.svg" alt="users icon" />
           <p>Customers</p>
         </div>
       </div>
       <SectionTitle>SHOP</SectionTitle>
       <div className="grid gap-5">
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-[10px]">
           <img src="/bank-dashboard/shop.svg" alt="shop icon" />
           <p>Products</p>
         </div>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-[10px]">
           <img src="/bank-dashboard/basket.svg" alt="basket icon" />
           <p>Orders</p>
         </div>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-[10px]">
           <img src="/bank-dashboard/chat info.svg" alt="chat info icon" />
           <p>Reports</p>
         </div>
