@@ -148,6 +148,18 @@ const config: Config = {
         "bbl-white": "#FFF",
         "bbl-gray": "#6C727F",
         "bbl-light": "#F3F4F6",
+        // bank dashboard
+        "bdb-white": "#FFFFFF",
+        "bdb-dark": "#262833",
+        "bdb-gray-100": "#6C727F",
+        "bdb-gray-200": "#43454D",
+        "bdb-light-100": "#FFFFFF33",
+        "bdb-light-200": "#E3ECE6",
+        "bdb-purple-100": "#E4D6F3",
+        "bdb-purple-200": "#A686C4",
+        "bdb-orange-100": "#F5DDC8",
+        "bdb-orange-200": "#E9AE79",
+        "bdb-green": "#73B06F",
       },
 
       fontSize: {

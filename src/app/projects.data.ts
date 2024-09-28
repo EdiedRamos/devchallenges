@@ -65,6 +65,11 @@ export const RESPONSIVE_PROJECTS: Project[] = [
     name: "Bento Box Layout",
     url: "bento-box-layout",
   },
+  {
+    id: "67b8f06d-ec6f-4db7-a09c-f399a32e61cd",
+    name: "Bank Dashboard",
+    url: "bank-dashboard",
+  },
 ];
 
 export const JAVASCRIPT_PROJECTS: Project[] = [
