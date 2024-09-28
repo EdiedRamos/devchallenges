@@ -4,68 +4,82 @@ function SectionTitle({ children }: PropsWithChildren) {
   return <p className="text-bdb-gray-100 text-cs-14 mt-9 mb-6">{children}</p>;
 }
 
+function NavigationItem({
+  imageSrc,
+  text,
+}: {
+  imageSrc: string;
+  text: string;
+}) {
+  return (
+    <div className="flex flex-wrap gap-[10px] items-center">
+      <img src={imageSrc} alt={`${text} icon`} />
+      <p>{text}</p>
+    </div>
+  );
+}
+
+function NavigationBadge({
+  children,
+  background,
+}: PropsWithChildren & { background: string }) {
+  return (
+    <div>
+      <span
+        className={`${background} text-bdb-white text-cs-12 px-2 py-[2px] rounded-xl`}
+      >
+        {children}
+      </span>
+    </div>
+  );
+}
+
+function NavigationMainSpacer({ children }: PropsWithChildren) {
+  return <div className="grid gap-5">{children}</div>;
+}
+
 export function Navigation() {
   return (
     <nav>
-      <div className="flex flex-wrap gap-[10px] items-center">
-        <img src="/bank-dashboard/House.svg" alt="dashboard icon" />
-        <p>Dashboard</p>
-      </div>
+      <NavigationItem imageSrc="/bank-dashboard/House.svg" text="Dashboard" />
+
       <SectionTitle>ANALYTICS</SectionTitle>
-      <div className="grid gap-5">
-        <div className="flex flex-wrap gap-[10px] items-center">
-          <img src="/bank-dashboard/show chart-1.svg" alt="performance icon" />
-          <p>Performance</p>
-        </div>
+      <NavigationMainSpacer>
+        <NavigationItem
+          imageSrc="/bank-dashboard/show chart-1.svg"
+          text="Performance"
+        />
         <div className="flex flex-wrap gap-[10px] justify-between">
-          <div className="flex flex-wrap gap-[10px]">
-            <img src="/bank-dashboard/Archery.svg" alt="dashboard icon" />
-            <p>Hotjar</p>
-          </div>
-          <div>
-            <span className="bg-bdb-purple-200 text-bdb-white text-cs-12 px-2 py-[2px] rounded-xl">
-              New
-            </span>
-          </div>
+          <NavigationItem
+            imageSrc="/bank-dashboard/Archery.svg"
+            text="Hotjar"
+          />
+          <NavigationBadge background="bg-bdb-purple-200">New</NavigationBadge>
         </div>
-      </div>
+      </NavigationMainSpacer>
+
       <SectionTitle>SUPPORT</SectionTitle>
-      <div className="grid gap-5">
+      <NavigationMainSpacer>
         <div className="flex flex-wrap justify-between">
-          <div className="flex flex-wrap gap-[10px]">
-            <img src="/bank-dashboard/ticket.svg" alt="ticket icon" />
-            <p>Tickets</p>
-          </div>
-          <div>
-            <span className="bg-bdb-gray-200 text-bdb-white text-cs-12 px-2 py-[2px] rounded-xl">
-              18
-            </span>
-          </div>
+          <NavigationItem
+            imageSrc="/bank-dashboard/ticket.svg"
+            text="Tickets"
+          />
+          <NavigationBadge background="bg-bdb-gray-200">18</NavigationBadge>
         </div>
-        <div className="flex flex-wrap gap-[10px]">
-          <img src="/bank-dashboard/account.svg" alt="account icon" />
-          <p>Agents</p>
-        </div>
-        <div className="flex flex-wrap gap-[10px]">
-          <img src="/bank-dashboard/users.svg" alt="users icon" />
-          <p>Customers</p>
-        </div>
-      </div>
+        <NavigationItem imageSrc="/bank-dashboard/account.svg" text="Agents" />
+        <NavigationItem imageSrc="/bank-dashboard/users.svg" text="Customers" />
+      </NavigationMainSpacer>
+
       <SectionTitle>SHOP</SectionTitle>
-      <div className="grid gap-5">
-        <div className="flex flex-wrap gap-[10px]">
-          <img src="/bank-dashboard/shop.svg" alt="shop icon" />
-          <p>Products</p>
-        </div>
-        <div className="flex flex-wrap gap-[10px]">
-          <img src="/bank-dashboard/basket.svg" alt="basket icon" />
-          <p>Orders</p>
-        </div>
-        <div className="flex flex-wrap gap-[10px]">
-          <img src="/bank-dashboard/chat info.svg" alt="chat info icon" />
-          <p>Reports</p>
-        </div>
-      </div>
+      <NavigationMainSpacer>
+        <NavigationItem imageSrc="/bank-dashboard/shop.svg" text="Products" />
+        <NavigationItem imageSrc="/bank-dashboard/basket.svg" text="Orders" />
+        <NavigationItem
+          imageSrc="/bank-dashboard/chat info.svg"
+          text="Reports"
+        />
+      </NavigationMainSpacer>
     </nav>
   );
 }
