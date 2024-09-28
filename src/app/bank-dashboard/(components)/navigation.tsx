@@ -1,7 +1,11 @@
 import { PropsWithChildren } from "react";
 
 function SectionTitle({ children }: PropsWithChildren) {
-  return <p className="text-bdb-gray-100 text-cs-14 mt-9 mb-6">{children}</p>;
+  return (
+    <p className="hidden md:inline-block text-bdb-gray-100 text-cs-14 mt-9 mb-6">
+      {children}
+    </p>
+  );
 }
 
 function NavigationItem({
@@ -12,9 +16,9 @@ function NavigationItem({
   text: string;
 }) {
   return (
-    <div className="flex flex-wrap gap-[10px] items-center">
+    <div className="flex flex-wrap gap-[10px] items-center" title={text}>
       <img src={imageSrc} alt={`${text} icon`} />
-      <p>{text}</p>
+      <p className="hidden md:inline-block">{text}</p>
     </div>
   );
 }
@@ -24,7 +28,7 @@ function NavigationBadge({
   background,
 }: PropsWithChildren & { background: string }) {
   return (
-    <div>
+    <div className="hidden md:inline-block">
       <span
         className={`${background} text-bdb-white text-cs-12 px-2 py-[2px] rounded-xl`}
       >
@@ -35,12 +39,12 @@ function NavigationBadge({
 }
 
 function NavigationMainSpacer({ children }: PropsWithChildren) {
-  return <div className="grid gap-5">{children}</div>;
+  return <div className="grid gap-3 md:gap-5">{children}</div>;
 }
 
 export function Navigation() {
   return (
-    <nav>
+    <nav className="grid gap-3 md:gap-0">
       <NavigationItem imageSrc="/bank-dashboard/House.svg" text="Dashboard" />
 
       <SectionTitle>ANALYTICS</SectionTitle>
