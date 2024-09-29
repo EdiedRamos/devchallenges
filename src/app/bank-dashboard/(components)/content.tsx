@@ -18,7 +18,7 @@ function ShoppingCard({
           <div>
             <img src="/bank-dashboard/cpu.svg" alt="microchip card image" />
           </div>
-          <p className="text-bdb-gray-200">Exp 26/6</p>
+          <p className="text-bdb-gray-100">Exp 26/6</p>
         </div>
       </div>
       <div
