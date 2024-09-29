@@ -12,7 +12,7 @@ function ShoppingCard({
       >
         <div className="flex flex-col gap-4">
           <p className="text-bdb-dark">Shopping Card</p>
-          <p className="text-bdb-gray-200">NAME</p>
+          <p className="text-bdb-gray-100">NAME</p>
         </div>
         <div className="flex flex-col gap-4 items-end">
           <div>
