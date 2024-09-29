@@ -4,3 +4,4 @@ export * from "./aside";
 export * from "./content";
 
 export * from "./shoppingCard";
+export * from "./addCard";
