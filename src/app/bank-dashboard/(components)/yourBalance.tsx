@@ -1,7 +1,7 @@
 export function YourBalance() {
   return (
     <div className="w-full flex flex-wrap rounded-xl overflow-hidden">
-      <article className="w-[50%] bg-bdb-green-light text-bdb-dark font-medium p-5 flex flex-col gap-4">
+      <article className="w-[50%] bg-bdb-green-light text-bdb-dark font-medium p-5 flex flex-col gap-3">
         <p>Your balance:</p>
         <p className="text-cs-24 font-bold">
           ${Number(25330).toLocaleString()}
