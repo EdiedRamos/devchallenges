@@ -6,8 +6,14 @@ export default function BankDashboard() {
       <Header />
       <div className="flex">
         <Navigation />
-        <Content />
-        <Aside />
+        <div className="flex flex-wrap flex-1">
+          <div className="flex-1 order-2 md:order-1">
+            <Content />
+          </div>
+          <div className="w-full md:max-w-[332px] border-l-[1px] border-bdb-gray-200 order-1 md:order-2">
+            <Aside />
+          </div>
+        </div>
       </div>
     </div>
   );
