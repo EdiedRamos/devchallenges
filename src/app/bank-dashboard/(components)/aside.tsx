@@ -12,10 +12,12 @@ export function Aside() {
             className="md:-rotate-90 w-96"
           />
         </div>
-        <p className="text-cs-12">CARD NUMBER</p>
-        <p className="text-cs-20 font-bold">**** 1234 4567 7800</p>
+        <div className="pt-2">
+          <p className="text-cs-12">CARD NUMBER</p>
+          <p className="text-cs-20 font-bold">**** 1234 4567 7800</p>
+        </div>
 
-        <div className="flex flex-wrap gap-4 my-6">
+        <div className="flex flex-wrap gap-4 my-6 border-b-[1px] border-bdb-gray-200 pb-6">
           <div>
             <p className="text-cs-12">EXPIRE DATE</p>
             <p className="font-medium">08/28</p>
