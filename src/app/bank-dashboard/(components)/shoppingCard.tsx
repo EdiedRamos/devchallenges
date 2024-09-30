@@ -6,7 +6,7 @@ export function ShoppingCard({
   secondaryBg?: string;
 }) {
   return (
-    <div className="w-full max-w-72 rounded-2xl overflow-hidden">
+    <div className="w-full max-w-80 rounded-2xl overflow-hidden">
       <div
         className={`flex flex-wrap justify-between p-6 pb-10 font-medium ${primaryBg}`}
       >
@@ -25,7 +25,7 @@ export function ShoppingCard({
         className={`flex flex-wrap justify-between items-center p-6 text-bdb-dark font-bold ${secondaryBg}`}
       >
         <p className="text-cs-20">**** **** 4486</p>
-        <p className="text-cs-20">VISA</p>
+        <p className="text-cs-24">VISA</p>
       </div>
     </div>
   );
