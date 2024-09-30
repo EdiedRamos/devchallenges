@@ -15,7 +15,7 @@ export function Info({ text, money, image, iconColor }: Props) {
       </div>
       <div>
         <p className="text-bdb-gray-100">{text}</p>
-        <p className="text-cs-24 font-medium">
+        <p className="text-cs-24 font-medium text-bdb-white">
           ${Number(money).toLocaleString()}
         </p>
       </div>

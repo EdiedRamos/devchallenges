@@ -44,7 +44,7 @@ function NavigationMainSpacer({ children }: PropsWithChildren) {
 
 export function Navigation() {
   return (
-    <nav className="flex flex-col justify-between border-r-[1px] border-bdb-gray-200 w-[70px] lg:w-full max-w-[220px] p-6 min-h-screen">
+    <nav className="flex flex-col justify-between border-r-[1px] border-bdb-gray-200 w-[70px] lg:w-full max-w-[220px] p-6 min-h-screen text-bdb-white">
       <div className="grid gap-3 lg:gap-0">
         <NavigationItem imageSrc="/bank-dashboard/House.svg" text="Dashboard" />
 
