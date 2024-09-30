@@ -28,7 +28,7 @@ export function ShoppingCard({
         </div>
       </div>
       <div
-        className={`flex flex-wrap justify-between items-center p-6 text-bdb-dark font-bold ${secondaryBg}`}
+        className={`flex flex-wrap justify-between items-center p-5 text-bdb-dark font-bold ${secondaryBg}`}
       >
         <p className="text-cs-20">**** **** 4486</p>
         <p className="text-cs-24">VISA</p>
