@@ -7,8 +7,8 @@ export default function BankDashboard() {
       <div className="flex">
         <Navigation />
         <Content />
+        <Aside />
       </div>
-      <Aside />
     </div>
   );
 }

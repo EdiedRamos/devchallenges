@@ -1,3 +1,3 @@
 export function Aside() {
-  return <div>aside</div>;
+  return <aside className="w-full max-w-[332px]">aside</aside>;
 }
