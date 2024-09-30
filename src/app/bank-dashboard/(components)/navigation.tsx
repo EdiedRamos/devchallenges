@@ -2,7 +2,7 @@ import { PropsWithChildren } from "react";
 
 function SectionTitle({ children }: PropsWithChildren) {
   return (
-    <p className="hidden lg:inline-block text-bdb-gray-100 text-cs-14 mt-9 mb-6">
+    <p className="hidden lg:inline-block text-bdb-gray-100 text-cs-14 mt-8 mb-6">
       {children}
     </p>
   );
