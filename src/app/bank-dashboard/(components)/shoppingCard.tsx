@@ -1,12 +1,14 @@
 export function ShoppingCard({
   primaryBg = "bg-orange-200",
   secondaryBg = "bg-purple-200",
+  className = "",
 }: {
   primaryBg?: string;
   secondaryBg?: string;
+  className?: string;
 }) {
   return (
-    <div className="w-full max-w-80 rounded-2xl overflow-hidden">
+    <div className={`w-full max-w-80 rounded-2xl overflow-hidden ${className}`}>
       <div
         className={`flex flex-wrap justify-between p-6 pb-10 font-medium ${primaryBg}`}
       >
