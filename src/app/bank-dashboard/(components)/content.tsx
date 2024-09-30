@@ -1,4 +1,4 @@
-import { ShoppingCard, AddCard } from ".";
+import { ShoppingCard, AddCard, Info } from ".";
 
 export function Content() {
   return (
@@ -14,6 +14,12 @@ export function Content() {
         />
       </div>
       <AddCard />
+      <Info
+        text="Earnings"
+        money="12341"
+        image="/bank-dashboard/show chart.svg"
+        iconColor="bg-bdb-green"
+      />
     </main>
   );
 }
