@@ -8,7 +8,11 @@ export function ShoppingCard({
   className?: string;
 }) {
   return (
-    <div className={`w-full max-w-72 rounded-2xl overflow-hidden ${className}`}>
+    <div
+      className={`max-w-72 rounded-2xl overflow-hidden ${
+        className || "w-full"
+      }`}
+    >
       <div
         className={`flex flex-wrap justify-between p-6 pb-10 font-medium ${primaryBg}`}
       >
