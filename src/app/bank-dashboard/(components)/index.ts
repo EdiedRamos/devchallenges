@@ -6,3 +6,4 @@ export * from "./content";
 export * from "./shoppingCard";
 export * from "./addCard";
 export * from "./info";
+export * from "./yourBalance";
