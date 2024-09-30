@@ -4,8 +4,10 @@ export default function BankDashboard() {
   return (
     <div className="min-h-screen bg-bdb-dark">
       <Header />
-      <Navigation />
-      <Content />
+      <div className="flex">
+        <Navigation />
+        <Content />
+      </div>
       <Aside />
     </div>
   );

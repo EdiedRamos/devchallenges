@@ -21,9 +21,18 @@ function YourBalance() {
 
 export function Content() {
   return (
-    <main>
-      <YourBalance />
+    <main className="border-[1px] border-bdb-gray-200 flex-1 m-6 p-6 rounded-2xl">
+      <h4 className="text-bdb-white font-bold">Inventory Details</h4>
+      <div className="mt-8">
+        <YourBalance />
+      </div>
 
+      <h4 className="text-bdb-white font-bold my-8">
+        Inventory Details{" "}
+        <span className="ml-2 text-bdb-white text-cs-12 px-2 py-[2px] rounded-xl bg-bdb-gray-200">
+          2
+        </span>
+      </h4>
       <div className="flex flex-wrap gap-5">
         <ShoppingCard
           primaryBg="bg-bdb-purple-100"
@@ -34,7 +43,10 @@ export function Content() {
           secondaryBg="bg-bdb-orange-200"
         />
       </div>
-      <AddCard />
+
+      <div className="mt-6 mb-8">
+        <AddCard />
+      </div>
 
       <section className="flex flex-wrap justify-around border-[1px] border-bdb-gray-200 rounded-xl p-5">
         <Info
