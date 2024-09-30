@@ -22,6 +22,7 @@ const config: Config = {
         "fs-bg": "url('/feature-section/Background_image.svg')",
         "mtt-bg": "url('/meet-the-team/Background_decor.svg')",
         "dsc-bg": "url('/device-shop-checkout/background.png')",
+        "bdb-bg": "url('/bank-dashboard/background-decor.svg')",
       },
       colors: {
         // multi-step register
@@ -154,12 +155,12 @@ const config: Config = {
         "bdb-gray-100": "#6C727F",
         "bdb-gray-200": "#43454D",
         "bdb-light-100": "#FFFFFF33",
-        "bdb-light-200": "#E3ECE6",
         "bdb-purple-100": "#E4D6F3",
         "bdb-purple-200": "#A686C4",
         "bdb-orange-100": "#F5DDC8",
         "bdb-orange-200": "#E9AE79",
         "bdb-green": "#73B06F",
+        "bdb-green-light": "#E3ECE6",
       },
 
       fontSize: {
